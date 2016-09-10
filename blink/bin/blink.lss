@@ -1,0 +1,1003 @@
+
+bin/blink.elf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00000000 <__isr_vector>:
+   0:	10002000 	.word	0x10002000
+   4:	000000c1 	.word	0x000000c1
+   8:	000000d1 	.word	0x000000d1
+   c:	000000d3 	.word	0x000000d3
+	...
+  2c:	000000d5 	.word	0x000000d5
+	...
+  38:	000000d7 	.word	0x000000d7
+  3c:	000001d9 	.word	0x000001d9
+  40:	000000db 	.word	0x000000db
+  44:	000000db 	.word	0x000000db
+  48:	000000db 	.word	0x000000db
+  4c:	000000db 	.word	0x000000db
+  50:	000000db 	.word	0x000000db
+  54:	000000db 	.word	0x000000db
+  58:	000000db 	.word	0x000000db
+  5c:	000000db 	.word	0x000000db
+  60:	000000db 	.word	0x000000db
+  64:	000000db 	.word	0x000000db
+  68:	000000db 	.word	0x000000db
+  6c:	000000db 	.word	0x000000db
+  70:	000000db 	.word	0x000000db
+  74:	000000db 	.word	0x000000db
+  78:	000000db 	.word	0x000000db
+  7c:	000000db 	.word	0x000000db
+  80:	000000db 	.word	0x000000db
+  84:	000000db 	.word	0x000000db
+  88:	000000db 	.word	0x000000db
+  8c:	000000db 	.word	0x000000db
+  90:	000000db 	.word	0x000000db
+  94:	000000db 	.word	0x000000db
+	...
+  a0:	000000db 	.word	0x000000db
+  a4:	000000db 	.word	0x000000db
+  a8:	000000db 	.word	0x000000db
+  ac:	00000000 	.word	0x00000000
+  b0:	000000db 	.word	0x000000db
+  b4:	000000db 	.word	0x000000db
+  b8:	000000db 	.word	0x000000db
+  bc:	000000db 	.word	0x000000db
+
+000000c0 <Reset_Handler>:
+
+/* Reset Handler */
+
+Reset_Handler:
+    .fnstart
+    LDR     R0, =SystemInit
+  c0:	4801      	ldr	r0, [pc, #4]	; (c8 <Reset_Handler+0x8>)
+    BLX     R0
+  c2:	4780      	blx	r0
+.if (RAM_MODE)
+    LDR     R0,=main
+  c4:	4801      	ldr	r0, [pc, #4]	; (cc <Reset_Handler+0xc>)
+    BX      R0
+  c6:	4700      	bx	r0
+
+/* Reset Handler */
+
+Reset_Handler:
+    .fnstart
+    LDR     R0, =SystemInit
+  c8:	000002fd 	.word	0x000002fd
+    BLX     R0
+.if (RAM_MODE)
+    LDR     R0,=main
+  cc:	000001e9 	.word	0x000001e9
+
+000000d0 <NMI_Handler>:
+/* Exception Handlers */
+
+    .weak   NMI_Handler
+    .type   NMI_Handler, %function
+NMI_Handler:
+    B       .
+  d0:	e7fe      	b.n	d0 <NMI_Handler>
+
+000000d2 <HardFault_Handler>:
+    .size   NMI_Handler, . - NMI_Handler
+
+    .weak   HardFault_Handler
+    .type   HardFault_Handler, %function
+HardFault_Handler:
+    B       .
+  d2:	e7fe      	b.n	d2 <HardFault_Handler>
+
+000000d4 <SVC_Handler>:
+    .size   HardFault_Handler, . - HardFault_Handler
+
+    .weak   SVC_Handler
+    .type   SVC_Handler, %function
+SVC_Handler:
+    B       .
+  d4:	e7fe      	b.n	d4 <SVC_Handler>
+
+000000d6 <PendSV_Handler>:
+    .size   SVC_Handler, . - SVC_Handler
+
+    .weak   PendSV_Handler
+    .type   PendSV_Handler, %function
+PendSV_Handler:
+    B       .
+  d6:	e7fe      	b.n	d6 <PendSV_Handler>
+    .size   PendSV_Handler, . - PendSV_Handler
+
+    .weak   SysTick_Handler
+    .type   SysTick_Handler, %function
+SysTick_Handler:
+    B       .
+  d8:	e7fe      	b.n	d8 <PendSV_Handler+0x2>
+
+000000da <Default_Handler>:
+/* IRQ Handlers */
+
+    .globl  Default_Handler
+    .type   Default_Handler, %function
+Default_Handler:
+    B       .
+  da:	e7fe      	b.n	da <Default_Handler>
+
+000000dc <Chip_Clock_GetSystemPLLOutClockRate>:
+}
+
+/* Return System PLL output clock rate */
+uint32_t Chip_Clock_GetSystemPLLOutClockRate(void)
+{
+	return Chip_Clock_GetPLLFreq(LPC_SYSCTL->SYSPLLCTRL,
+  dc:	4b0c      	ldr	r3, [pc, #48]	; (110 <Chip_Clock_GetSystemPLLOutClockRate+0x34>)
+	return clkRate;
+}
+
+/* Return System PLL output clock rate */
+uint32_t Chip_Clock_GetSystemPLLOutClockRate(void)
+{
+  de:	b082      	sub	sp, #8
+	return Chip_Clock_GetPLLFreq(LPC_SYSCTL->SYSPLLCTRL,
+  e0:	689a      	ldr	r2, [r3, #8]
+/* Return System PLL input clock rate */
+uint32_t Chip_Clock_GetSystemPLLInClockRate(void)
+{
+	uint32_t clkRate;
+
+	switch ((CHIP_SYSCTL_PLLCLKSRC_T) (LPC_SYSCTL->SYSPLLCLKSEL & 0x3)) {
+  e2:	6c19      	ldr	r1, [r3, #64]	; 0x40
+  e4:	2303      	movs	r3, #3
+  e6:	400b      	ands	r3, r1
+  e8:	d00c      	beq.n	104 <Chip_Clock_GetSystemPLLOutClockRate+0x28>
+  ea:	2b01      	cmp	r3, #1
+  ec:	d002      	beq.n	f4 <Chip_Clock_GetSystemPLLOutClockRate+0x18>
+  ee:	2000      	movs	r0, #0
+/* Return System PLL output clock rate */
+uint32_t Chip_Clock_GetSystemPLLOutClockRate(void)
+{
+	return Chip_Clock_GetPLLFreq(LPC_SYSCTL->SYSPLLCTRL,
+								 Chip_Clock_GetSystemPLLInClockRate());
+}
+  f0:	b002      	add	sp, #8
+  f2:	4770      	bx	lr
+  f4:	201f      	movs	r0, #31
+ * @brief	Returns the main oscillator clock rate
+ * @return	main oscillator clock rate
+ */
+STATIC INLINE uint32_t Chip_Clock_GetMainOscRate(void)
+{
+	return OscRateIn;
+  f6:	4b07      	ldr	r3, [pc, #28]	; (114 <Chip_Clock_GetSystemPLLOutClockRate+0x38>)
+  f8:	4010      	ands	r0, r2
+  fa:	681b      	ldr	r3, [r3, #0]
+  fc:	3001      	adds	r0, #1
+  fe:	9301      	str	r3, [sp, #4]
+ 100:	4358      	muls	r0, r3
+ 102:	e7f5      	b.n	f0 <Chip_Clock_GetSystemPLLOutClockRate+0x14>
+ 104:	201f      	movs	r0, #31
+ 106:	4002      	ands	r2, r0
+ 108:	4803      	ldr	r0, [pc, #12]	; (118 <Chip_Clock_GetSystemPLLOutClockRate+0x3c>)
+ 10a:	3201      	adds	r2, #1
+ 10c:	4350      	muls	r0, r2
+ 10e:	e7ef      	b.n	f0 <Chip_Clock_GetSystemPLLOutClockRate+0x14>
+ 110:	40048000 	.word	0x40048000
+ 114:	000004f0 	.word	0x000004f0
+ 118:	00b71b00 	.word	0x00b71b00
+
+0000011c <Chip_Clock_GetMainClockRate>:
+/* Return main clock rate */
+uint32_t Chip_Clock_GetMainClockRate(void)
+{
+	uint32_t clkRate = 0;
+
+	switch ((CHIP_SYSCTL_MAINCLKSRC_T) (LPC_SYSCTL->MAINCLKSEL & 0x3)) {
+ 11c:	2203      	movs	r2, #3
+ 11e:	4912      	ldr	r1, [pc, #72]	; (168 <Chip_Clock_GetMainClockRate+0x4c>)
+
+#endif
+
+/* Return main clock rate */
+uint32_t Chip_Clock_GetMainClockRate(void)
+{
+ 120:	b508      	push	{r3, lr}
+	uint32_t clkRate = 0;
+
+	switch ((CHIP_SYSCTL_MAINCLKSRC_T) (LPC_SYSCTL->MAINCLKSEL & 0x3)) {
+ 122:	6f0b      	ldr	r3, [r1, #112]	; 0x70
+ 124:	4013      	ands	r3, r2
+ 126:	2b02      	cmp	r3, #2
+ 128:	d011      	beq.n	14e <Chip_Clock_GetMainClockRate+0x32>
+ 12a:	2b03      	cmp	r3, #3
+ 12c:	d00c      	beq.n	148 <Chip_Clock_GetMainClockRate+0x2c>
+ 12e:	2b01      	cmp	r3, #1
+ 130:	d001      	beq.n	136 <Chip_Clock_GetMainClockRate+0x1a>
+{
+	uint32_t clkRate;
+
+	switch ((CHIP_SYSCTL_PLLCLKSRC_T) (LPC_SYSCTL->SYSPLLCLKSEL & 0x3)) {
+	case SYSCTL_PLLCLKSRC_IRC:
+		clkRate = Chip_Clock_GetIntOscRate();
+ 132:	480e      	ldr	r0, [pc, #56]	; (16c <Chip_Clock_GetMainClockRate+0x50>)
+		clkRate = Chip_Clock_GetSystemPLLOutClockRate();
+		break;
+	}
+
+	return clkRate;
+}
+ 134:	bd08      	pop	{r3, pc}
+/* Return System PLL input clock rate */
+uint32_t Chip_Clock_GetSystemPLLInClockRate(void)
+{
+	uint32_t clkRate;
+
+	switch ((CHIP_SYSCTL_PLLCLKSRC_T) (LPC_SYSCTL->SYSPLLCLKSEL & 0x3)) {
+ 136:	6c0b      	ldr	r3, [r1, #64]	; 0x40
+ 138:	401a      	ands	r2, r3
+ 13a:	d0fa      	beq.n	132 <Chip_Clock_GetMainClockRate+0x16>
+		clkRate = Chip_Clock_GetExtClockInRate();
+		break;
+#endif
+
+	default:
+		clkRate = 0;
+ 13c:	2000      	movs	r0, #0
+/* Return System PLL input clock rate */
+uint32_t Chip_Clock_GetSystemPLLInClockRate(void)
+{
+	uint32_t clkRate;
+
+	switch ((CHIP_SYSCTL_PLLCLKSRC_T) (LPC_SYSCTL->SYSPLLCLKSEL & 0x3)) {
+ 13e:	2a01      	cmp	r2, #1
+ 140:	d1f8      	bne.n	134 <Chip_Clock_GetMainClockRate+0x18>
+ 142:	4b0b      	ldr	r3, [pc, #44]	; (170 <Chip_Clock_GetMainClockRate+0x54>)
+ 144:	6818      	ldr	r0, [r3, #0]
+ 146:	e7f5      	b.n	134 <Chip_Clock_GetMainClockRate+0x18>
+		clkRate = Chip_Clock_GetWDTOSCRate();
+		break;
+#endif
+
+	case SYSCTL_MAINCLKSRC_PLLOUT:
+		clkRate = Chip_Clock_GetSystemPLLOutClockRate();
+ 148:	f7ff ffc8 	bl	dc <Chip_Clock_GetSystemPLLOutClockRate>
+		break;
+ 14c:	e7f2      	b.n	134 <Chip_Clock_GetMainClockRate+0x18>
+#endif
+
+/* Return estimated watchdog oscillator rate */
+uint32_t Chip_Clock_GetWDTOSCRate(void)
+{
+	return Chip_Clock_GetWDTLFORate(LPC_SYSCTL->WDTOSCCTRL);
+ 14e:	6a4b      	ldr	r3, [r1, #36]	; 0x24
+	uint32_t div;
+	CHIP_WDTLFO_OSC_T clk;
+
+	/* Get WDT oscillator settings */
+	clk = (CHIP_WDTLFO_OSC_T) ((reg >> 5) & 0xF);
+	div = reg & 0x1F;
+ 150:	211f      	movs	r1, #31
+{
+	uint32_t div;
+	CHIP_WDTLFO_OSC_T clk;
+
+	/* Get WDT oscillator settings */
+	clk = (CHIP_WDTLFO_OSC_T) ((reg >> 5) & 0xF);
+ 152:	05da      	lsls	r2, r3, #23
+	div = reg & 0x1F;
+ 154:	4019      	ands	r1, r3
+
+	/* Compute clock rate and divided by divde value */
+	return wdtOSCRate[clk] / ((div + 1) << 1);
+ 156:	0f12      	lsrs	r2, r2, #28
+ 158:	4b06      	ldr	r3, [pc, #24]	; (174 <Chip_Clock_GetMainClockRate+0x58>)
+ 15a:	0092      	lsls	r2, r2, #2
+ 15c:	3101      	adds	r1, #1
+ 15e:	0049      	lsls	r1, r1, #1
+ 160:	58d0      	ldr	r0, [r2, r3]
+ 162:	f000 f913 	bl	38c <__aeabi_uidiv>
+		break;
+
+#else
+	case SYSCTL_MAINCLKSRC_WDTOSC:
+		clkRate = Chip_Clock_GetWDTOSCRate();
+		break;
+ 166:	e7e5      	b.n	134 <Chip_Clock_GetMainClockRate+0x18>
+ 168:	40048000 	.word	0x40048000
+ 16c:	00b71b00 	.word	0x00b71b00
+ 170:	000004f0 	.word	0x000004f0
+ 174:	000004b0 	.word	0x000004b0
+
+00000178 <Chip_Clock_GetSystemClockRate>:
+	return clkRate;
+}
+
+/* Return system clock rate */
+uint32_t Chip_Clock_GetSystemClockRate(void)
+{
+ 178:	b508      	push	{r3, lr}
+	/* No point in checking for divide by 0 */
+	return Chip_Clock_GetMainClockRate() / LPC_SYSCTL->SYSAHBCLKDIV;
+ 17a:	f7ff ffcf 	bl	11c <Chip_Clock_GetMainClockRate>
+ 17e:	4b02      	ldr	r3, [pc, #8]	; (188 <Chip_Clock_GetSystemClockRate+0x10>)
+ 180:	6f99      	ldr	r1, [r3, #120]	; 0x78
+ 182:	f000 f903 	bl	38c <__aeabi_uidiv>
+}
+ 186:	bd08      	pop	{r3, pc}
+ 188:	40048000 	.word	0x40048000
+
+0000018c <SystemCoreClockUpdate>:
+ ****************************************************************************/
+
+/* Update system core clock rate, should be called if the system has
+   a clock rate change */
+void SystemCoreClockUpdate(void)
+{
+ 18c:	b508      	push	{r3, lr}
+	/* CPU core speed */
+	SystemCoreClock = Chip_Clock_GetSystemClockRate();
+ 18e:	f7ff fff3 	bl	178 <Chip_Clock_GetSystemClockRate>
+ 192:	4b01      	ldr	r3, [pc, #4]	; (198 <SystemCoreClockUpdate+0xc>)
+ 194:	6018      	str	r0, [r3, #0]
+}
+ 196:	bd08      	pop	{r3, pc}
+ 198:	10000100 	.word	0x10000100
+
+0000019c <Chip_GPIO_Init>:
+ * @param	clk	: Clock to enable
+ * @return	Nothing
+ */
+STATIC INLINE void Chip_Clock_EnablePeriphClock(CHIP_SYSCTL_CLOCK_T clk)
+{
+	LPC_SYSCTL->SYSAHBCLKCTRL |= (1 << clk);
+ 19c:	2280      	movs	r2, #128	; 0x80
+ 19e:	2340      	movs	r3, #64	; 0x40
+ 1a0:	4902      	ldr	r1, [pc, #8]	; (1ac <Chip_GPIO_Init+0x10>)
+ 1a2:	5888      	ldr	r0, [r1, r2]
+ 1a4:	4303      	orrs	r3, r0
+ 1a6:	508b      	str	r3, [r1, r2]
+/* Initialize GPIO block */
+void Chip_GPIO_Init(LPC_GPIO_T *pGPIO)
+{
+	UNUSED(pGPIO);
+	Chip_Clock_EnablePeriphClock(SYSCTL_CLOCK_GPIO);
+}
+ 1a8:	4770      	bx	lr
+ 1aa:	46c0      	nop			; (mov r8, r8)
+ 1ac:	40048000 	.word	0x40048000
+
+000001b0 <Chip_GPIO_WriteDirBit>:
+	Chip_Clock_DisablePeriphClock(SYSCTL_CLOCK_GPIO);
+}
+
+/* Set GPIO direction */
+void Chip_GPIO_WriteDirBit(LPC_GPIO_T *pGPIO, uint32_t port, uint8_t bit, bool setting)
+{
+ 1b0:	b510      	push	{r4, lr}
+	if (setting) {
+		pGPIO[port].DIR |= 1UL << bit;
+ 1b2:	2480      	movs	r4, #128	; 0x80
+ 1b4:	0409      	lsls	r1, r1, #16
+ 1b6:	1840      	adds	r0, r0, r1
+ 1b8:	0224      	lsls	r4, r4, #8
+}
+
+/* Set GPIO direction */
+void Chip_GPIO_WriteDirBit(LPC_GPIO_T *pGPIO, uint32_t port, uint8_t bit, bool setting)
+{
+	if (setting) {
+ 1ba:	2b00      	cmp	r3, #0
+ 1bc:	d105      	bne.n	1ca <Chip_GPIO_WriteDirBit+0x1a>
+		pGPIO[port].DIR |= 1UL << bit;
+	}
+	else {
+		pGPIO[port].DIR &= ~(1UL << bit);
+ 1be:	2101      	movs	r1, #1
+ 1c0:	4091      	lsls	r1, r2
+ 1c2:	5903      	ldr	r3, [r0, r4]
+ 1c4:	438b      	bics	r3, r1
+ 1c6:	5103      	str	r3, [r0, r4]
+	}
+}
+ 1c8:	bd10      	pop	{r4, pc}
+
+/* Set GPIO direction */
+void Chip_GPIO_WriteDirBit(LPC_GPIO_T *pGPIO, uint32_t port, uint8_t bit, bool setting)
+{
+	if (setting) {
+		pGPIO[port].DIR |= 1UL << bit;
+ 1ca:	2101      	movs	r1, #1
+ 1cc:	4091      	lsls	r1, r2
+ 1ce:	1c0a      	adds	r2, r1, #0
+ 1d0:	5903      	ldr	r3, [r0, r4]
+ 1d2:	431a      	orrs	r2, r3
+ 1d4:	5102      	str	r2, [r0, r4]
+ 1d6:	e7f7      	b.n	1c8 <Chip_GPIO_WriteDirBit+0x18>
+
+000001d8 <SysTick_Handler>:
+#define LED3 2, 9
+
+volatile uint32_t msTicks;
+
+void SysTick_Handler(void) {
+	msTicks++;
+ 1d8:	4a02      	ldr	r2, [pc, #8]	; (1e4 <SysTick_Handler+0xc>)
+ 1da:	6813      	ldr	r3, [r2, #0]
+ 1dc:	3301      	adds	r3, #1
+ 1de:	6013      	str	r3, [r2, #0]
+}
+ 1e0:	4770      	bx	lr
+ 1e2:	46c0      	nop			; (mov r8, r8)
+ 1e4:	10000104 	.word	0x10000104
+
+000001e8 <main>:
+
+static void LED_Write(uint8_t port, uint8_t pin, uint8_t val) {
+	Chip_GPIO_SetPinState(LPC_GPIO, port, pin, val);
+}
+
+int main (void) {
+ 1e8:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
+ 1ea:	465f      	mov	r7, fp
+ 1ec:	4656      	mov	r6, sl
+ 1ee:	464d      	mov	r5, r9
+ 1f0:	4644      	mov	r4, r8
+ 1f2:	b4f0      	push	{r4, r5, r6, r7}
+
+	SystemCoreClockUpdate();
+ 1f4:	f7ff ffca 	bl	18c <SystemCoreClockUpdate>
+
+
+	if (SysTick_Config (SystemCoreClock / 1000)) {
+ 1f8:	21fa      	movs	r1, #250	; 0xfa
+ 1fa:	4b3b      	ldr	r3, [pc, #236]	; (2e8 <Stack_Size+0xe8>)
+ 1fc:	0089      	lsls	r1, r1, #2
+ 1fe:	6818      	ldr	r0, [r3, #0]
+ 200:	f000 f8c4 	bl	38c <__aeabi_uidiv>
+ */
+__STATIC_INLINE uint32_t SysTick_Config(uint32_t ticks)
+{
+  if (ticks > SysTick_LOAD_RELOAD_Msk)  return (1);            /* Reload value impossible */
+
+  SysTick->LOAD  = (ticks & SysTick_LOAD_RELOAD_Msk) - 1;      /* set reload register */
+ 204:	4a39      	ldr	r2, [pc, #228]	; (2ec <Stack_Size+0xec>)
+ 206:	3801      	subs	r0, #1
+ 208:	6050      	str	r0, [r2, #4]
+    \param [in]  priority  Priority to set.
+ */
+__STATIC_INLINE void NVIC_SetPriority(IRQn_Type IRQn, uint32_t priority)
+{
+  if(IRQn < 0) {
+    SCB->SHP[_SHP_IDX(IRQn)] = (SCB->SHP[_SHP_IDX(IRQn)] & ~(0xFF << _BIT_SHIFT(IRQn))) |
+ 20a:	20c0      	movs	r0, #192	; 0xc0
+ 20c:	4938      	ldr	r1, [pc, #224]	; (2f0 <Stack_Size+0xf0>)
+ 20e:	0600      	lsls	r0, r0, #24
+ 210:	6a0b      	ldr	r3, [r1, #32]
+	Chip_GPIO_Init(LPC_GPIO);
+
+}
+
+static void LED_Init(uint8_t port, uint8_t pin) {
+	Chip_GPIO_WriteDirBit(LPC_GPIO, port, pin, true);
+ 212:	25a0      	movs	r5, #160	; 0xa0
+ 214:	021b      	lsls	r3, r3, #8
+ 216:	0a1b      	lsrs	r3, r3, #8
+ 218:	4303      	orrs	r3, r0
+{
+  if (ticks > SysTick_LOAD_RELOAD_Msk)  return (1);            /* Reload value impossible */
+
+  SysTick->LOAD  = (ticks & SysTick_LOAD_RELOAD_Msk) - 1;      /* set reload register */
+  NVIC_SetPriority (SysTick_IRQn, (1<<__NVIC_PRIO_BITS) - 1);  /* set Priority for Systick Interrupt */
+  SysTick->VAL   = 0;                                          /* Load the SysTick Counter Value */
+ 21a:	2400      	movs	r4, #0
+    \param [in]  priority  Priority to set.
+ */
+__STATIC_INLINE void NVIC_SetPriority(IRQn_Type IRQn, uint32_t priority)
+{
+  if(IRQn < 0) {
+    SCB->SHP[_SHP_IDX(IRQn)] = (SCB->SHP[_SHP_IDX(IRQn)] & ~(0xFF << _BIT_SHIFT(IRQn))) |
+ 21c:	620b      	str	r3, [r1, #32]
+  if (ticks > SysTick_LOAD_RELOAD_Msk)  return (1);            /* Reload value impossible */
+
+  SysTick->LOAD  = (ticks & SysTick_LOAD_RELOAD_Msk) - 1;      /* set reload register */
+  NVIC_SetPriority (SysTick_IRQn, (1<<__NVIC_PRIO_BITS) - 1);  /* set Priority for Systick Interrupt */
+  SysTick->VAL   = 0;                                          /* Load the SysTick Counter Value */
+  SysTick->CTRL  = SysTick_CTRL_CLKSOURCE_Msk |
+ 21e:	2307      	movs	r3, #7
+ 220:	05ed      	lsls	r5, r5, #23
+{
+  if (ticks > SysTick_LOAD_RELOAD_Msk)  return (1);            /* Reload value impossible */
+
+  SysTick->LOAD  = (ticks & SysTick_LOAD_RELOAD_Msk) - 1;      /* set reload register */
+  NVIC_SetPriority (SysTick_IRQn, (1<<__NVIC_PRIO_BITS) - 1);  /* set Priority for Systick Interrupt */
+  SysTick->VAL   = 0;                                          /* Load the SysTick Counter Value */
+ 222:	6094      	str	r4, [r2, #8]
+ 224:	1c28      	adds	r0, r5, #0
+  SysTick->CTRL  = SysTick_CTRL_CLKSOURCE_Msk |
+ 226:	6013      	str	r3, [r2, #0]
+ 228:	2102      	movs	r1, #2
+ 22a:	2208      	movs	r2, #8
+ 22c:	3b06      	subs	r3, #6
+ 22e:	f7ff ffbf 	bl	1b0 <Chip_GPIO_WriteDirBit>
+ * @return	Nothing
+ * @note	This function replaces Chip_GPIO_WritePortBit()
+ */
+STATIC INLINE void Chip_GPIO_SetPinState(LPC_GPIO_T *pGPIO, uint8_t port, uint8_t pin, bool setting)
+{
+	pGPIO[port].DATA[1 << pin] = setting << pin;
+ 232:	2380      	movs	r3, #128	; 0x80
+ 234:	4e2f      	ldr	r6, [pc, #188]	; (2f4 <Stack_Size+0xf4>)
+ 236:	00db      	lsls	r3, r3, #3
+ 238:	50f4      	str	r4, [r6, r3]
+ 23a:	1c28      	adds	r0, r5, #0
+ 23c:	2100      	movs	r1, #0
+ 23e:	2206      	movs	r2, #6
+ 240:	469a      	mov	sl, r3
+ 242:	2301      	movs	r3, #1
+ 244:	f7ff ffb4 	bl	1b0 <Chip_GPIO_WriteDirBit>
+ 248:	2380      	movs	r3, #128	; 0x80
+ 24a:	005b      	lsls	r3, r3, #1
+ 24c:	50ec      	str	r4, [r5, r3]
+ 24e:	1c28      	adds	r0, r5, #0
+ 250:	2100      	movs	r1, #0
+ 252:	2207      	movs	r2, #7
+ 254:	4699      	mov	r9, r3
+ 256:	3bff      	subs	r3, #255	; 0xff
+ 258:	f7ff ffaa 	bl	1b0 <Chip_GPIO_WriteDirBit>
+ 25c:	2380      	movs	r3, #128	; 0x80
+ 25e:	2780      	movs	r7, #128	; 0x80
+ 260:	009b      	lsls	r3, r3, #2
+ 262:	50ec      	str	r4, [r5, r3]
+ 264:	2209      	movs	r2, #9
+ 266:	013f      	lsls	r7, r7, #4
+ 268:	1c28      	adds	r0, r5, #0
+ 26a:	2102      	movs	r1, #2
+ 26c:	4698      	mov	r8, r3
+ 26e:	2301      	movs	r3, #1
+ 270:	f7ff ff9e 	bl	1b0 <Chip_GPIO_WriteDirBit>
+ 274:	51f4      	str	r4, [r6, r7]
+	uint32_t curTicks = msTicks;
+	while ((msTicks - curTicks) < dlyTicks);
+}
+
+static void GPIO_Config(void) {
+	Chip_GPIO_Init(LPC_GPIO);
+ 276:	1c28      	adds	r0, r5, #0
+ 278:	f7ff ff90 	bl	19c <Chip_GPIO_Init>
+
+	uint8_t i = 1;
+	uint16_t delay = 500;
+
+	while(1) {
+		i = 1 - i;
+ 27c:	2301      	movs	r3, #1
+ 27e:	46bb      	mov	fp, r7
+ 280:	469c      	mov	ip, r3
+ 282:	2700      	movs	r7, #0
+ 284:	4a1c      	ldr	r2, [pc, #112]	; (2f8 <Stack_Size+0xf8>)
+	LED_Init(LED2);
+	LED_Init(LED3);
+
+	GPIO_Config();
+
+	uint8_t i = 1;
+ 286:	3401      	adds	r4, #1
+	uint16_t delay = 500;
+
+	while(1) {
+		i = 1 - i;
+ 288:	4663      	mov	r3, ip
+ 28a:	1b1c      	subs	r4, r3, r4
+ 28c:	b2e4      	uxtb	r4, r4
+ 28e:	21fa      	movs	r1, #250	; 0xfa
+		delay = (i) ? 500 : 250;
+ 290:	2c00      	cmp	r4, #0
+ 292:	d000      	beq.n	296 <Stack_Size+0x96>
+ 294:	31fa      	adds	r1, #250	; 0xfa
+ 296:	465b      	mov	r3, fp
+ 298:	4648      	mov	r0, r9
+ 29a:	50f7      	str	r7, [r6, r3]
+ 29c:	4653      	mov	r3, sl
+ 29e:	50f0      	str	r0, [r6, r3]
+void SysTick_Handler(void) {
+	msTicks++;
+}
+
+static void Delay(uint32_t dlyTicks) {
+	uint32_t curTicks = msTicks;
+ 2a0:	6810      	ldr	r0, [r2, #0]
+	while ((msTicks - curTicks) < dlyTicks);
+ 2a2:	6813      	ldr	r3, [r2, #0]
+ 2a4:	1a1b      	subs	r3, r3, r0
+ 2a6:	428b      	cmp	r3, r1
+ 2a8:	d3fb      	bcc.n	2a2 <Stack_Size+0xa2>
+ 2aa:	4653      	mov	r3, sl
+ 2ac:	2040      	movs	r0, #64	; 0x40
+ 2ae:	50f7      	str	r7, [r6, r3]
+ 2b0:	464b      	mov	r3, r9
+ 2b2:	50e8      	str	r0, [r5, r3]
+void SysTick_Handler(void) {
+	msTicks++;
+}
+
+static void Delay(uint32_t dlyTicks) {
+	uint32_t curTicks = msTicks;
+ 2b4:	6810      	ldr	r0, [r2, #0]
+	while ((msTicks - curTicks) < dlyTicks);
+ 2b6:	6813      	ldr	r3, [r2, #0]
+ 2b8:	1a1b      	subs	r3, r3, r0
+ 2ba:	428b      	cmp	r3, r1
+ 2bc:	d3fb      	bcc.n	2b6 <Stack_Size+0xb6>
+ 2be:	464b      	mov	r3, r9
+ 2c0:	2080      	movs	r0, #128	; 0x80
+ 2c2:	50ef      	str	r7, [r5, r3]
+ 2c4:	4643      	mov	r3, r8
+ 2c6:	50e8      	str	r0, [r5, r3]
+void SysTick_Handler(void) {
+	msTicks++;
+}
+
+static void Delay(uint32_t dlyTicks) {
+	uint32_t curTicks = msTicks;
+ 2c8:	6810      	ldr	r0, [r2, #0]
+	while ((msTicks - curTicks) < dlyTicks);
+ 2ca:	6813      	ldr	r3, [r2, #0]
+ 2cc:	1a1b      	subs	r3, r3, r0
+ 2ce:	428b      	cmp	r3, r1
+ 2d0:	d3fb      	bcc.n	2ca <Stack_Size+0xca>
+ 2d2:	4643      	mov	r3, r8
+ 2d4:	4640      	mov	r0, r8
+ 2d6:	50ef      	str	r7, [r5, r3]
+ 2d8:	465b      	mov	r3, fp
+ 2da:	50f0      	str	r0, [r6, r3]
+void SysTick_Handler(void) {
+	msTicks++;
+}
+
+static void Delay(uint32_t dlyTicks) {
+	uint32_t curTicks = msTicks;
+ 2dc:	6810      	ldr	r0, [r2, #0]
+	while ((msTicks - curTicks) < dlyTicks);
+ 2de:	6813      	ldr	r3, [r2, #0]
+ 2e0:	1a1b      	subs	r3, r3, r0
+ 2e2:	428b      	cmp	r3, r1
+ 2e4:	d3fb      	bcc.n	2de <Stack_Size+0xde>
+ 2e6:	e7cf      	b.n	288 <Stack_Size+0x88>
+ 2e8:	10000100 	.word	0x10000100
+ 2ec:	e000e010 	.word	0xe000e010
+ 2f0:	e000ed00 	.word	0xe000ed00
+ 2f4:	50020000 	.word	0x50020000
+ 2f8:	10000104 	.word	0x10000104
+
+000002fc <SystemInit>:
+#if (CLOCK_SETUP)                                 /* Clock Setup              */
+#if (SYSCLK_SETUP)                                /* System Clock Setup       */
+#if (SYSOSC_SETUP)                                /* System Oscillator Setup  */
+  uint32_t i;
+
+  LPC_SYSCTL->PDRUNCFG     &= ~(1 << 5);          /* Power-up System Osc      */
+ 2fc:	218e      	movs	r1, #142	; 0x8e
+ 2fe:	2020      	movs	r0, #32
+ 300:	4b20      	ldr	r3, [pc, #128]	; (384 <SystemInit+0x88>)
+ 302:	0089      	lsls	r1, r1, #2
+ 304:	585a      	ldr	r2, [r3, r1]
+ *
+ * @brief  Setup the microcontroller system.
+ *         Initialize the System.
+ */
+void SystemInit (void)
+{
+ 306:	b510      	push	{r4, lr}
+#if (CLOCK_SETUP)                                 /* Clock Setup              */
+#if (SYSCLK_SETUP)                                /* System Clock Setup       */
+#if (SYSOSC_SETUP)                                /* System Oscillator Setup  */
+  uint32_t i;
+
+  LPC_SYSCTL->PDRUNCFG     &= ~(1 << 5);          /* Power-up System Osc      */
+ 308:	4382      	bics	r2, r0
+ 30a:	505a      	str	r2, [r3, r1]
+  LPC_SYSCTL->SYSOSCCTRL    = SYSOSCCTRL_Val;
+ 30c:	2200      	movs	r2, #0
+ 30e:	621a      	str	r2, [r3, #32]
+ 310:	23c8      	movs	r3, #200	; 0xc8
+
+    No Operation does nothing. This instruction can be used for code alignment purposes.
+ */
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __NOP(void)
+{
+  __ASM volatile ("nop");
+ 312:	46c0      	nop			; (mov r8, r8)
+ 314:	3b01      	subs	r3, #1
+  for (i = 0; i < 200; i++) __NOP();
+ 316:	2b00      	cmp	r3, #0
+ 318:	d1fb      	bne.n	312 <SystemInit+0x16>
+  LPC_SYSCTL->SYSPLLCLKSEL  = SYSPLLCLKSEL_Val;   /* Select PLL Input         */
+  LPC_SYSCTL->SYSPLLCLKUEN  = 0x1;               /* Update Clock Source      */
+ 31a:	2201      	movs	r2, #1
+  LPC_SYSCTL->SYSPLLCLKUEN  = 0x0;               /* Toggle Update Register   */
+  LPC_SYSCTL->SYSPLLCLKUEN  = 0x1;
+  while (!(LPC_SYSCTL->SYSPLLCLKUEN & 0x1));     /* Wait Until Updated       */
+ 31c:	2001      	movs	r0, #1
+  uint32_t i;
+
+  LPC_SYSCTL->PDRUNCFG     &= ~(1 << 5);          /* Power-up System Osc      */
+  LPC_SYSCTL->SYSOSCCTRL    = SYSOSCCTRL_Val;
+  for (i = 0; i < 200; i++) __NOP();
+  LPC_SYSCTL->SYSPLLCLKSEL  = SYSPLLCLKSEL_Val;   /* Select PLL Input         */
+ 31e:	4919      	ldr	r1, [pc, #100]	; (384 <SystemInit+0x88>)
+ 320:	640b      	str	r3, [r1, #64]	; 0x40
+  LPC_SYSCTL->SYSPLLCLKUEN  = 0x1;               /* Update Clock Source      */
+ 322:	644a      	str	r2, [r1, #68]	; 0x44
+  LPC_SYSCTL->SYSPLLCLKUEN  = 0x0;               /* Toggle Update Register   */
+ 324:	644b      	str	r3, [r1, #68]	; 0x44
+  LPC_SYSCTL->SYSPLLCLKUEN  = 0x1;
+ 326:	644a      	str	r2, [r1, #68]	; 0x44
+  while (!(LPC_SYSCTL->SYSPLLCLKUEN & 0x1));     /* Wait Until Updated       */
+ 328:	6c4a      	ldr	r2, [r1, #68]	; 0x44
+ 32a:	4b16      	ldr	r3, [pc, #88]	; (384 <SystemInit+0x88>)
+ 32c:	4210      	tst	r0, r2
+ 32e:	d0fb      	beq.n	328 <SystemInit+0x2c>
+#if (SYSPLL_SETUP)                                /* System PLL Setup         */
+  LPC_SYSCTL->SYSPLLCTRL    = SYSPLLCTRL_Val;
+ 330:	2223      	movs	r2, #35	; 0x23
+  LPC_SYSCTL->PDRUNCFG     &= ~(1 << 7);          /* Power-up SYSPLL          */
+ 332:	218e      	movs	r1, #142	; 0x8e
+ 334:	2080      	movs	r0, #128	; 0x80
+  LPC_SYSCTL->SYSPLLCLKUEN  = 0x1;               /* Update Clock Source      */
+  LPC_SYSCTL->SYSPLLCLKUEN  = 0x0;               /* Toggle Update Register   */
+  LPC_SYSCTL->SYSPLLCLKUEN  = 0x1;
+  while (!(LPC_SYSCTL->SYSPLLCLKUEN & 0x1));     /* Wait Until Updated       */
+#if (SYSPLL_SETUP)                                /* System PLL Setup         */
+  LPC_SYSCTL->SYSPLLCTRL    = SYSPLLCTRL_Val;
+ 336:	609a      	str	r2, [r3, #8]
+  LPC_SYSCTL->PDRUNCFG     &= ~(1 << 7);          /* Power-up SYSPLL          */
+ 338:	0089      	lsls	r1, r1, #2
+ 33a:	585a      	ldr	r2, [r3, r1]
+  while (!(LPC_SYSCTL->SYSPLLSTAT & 0x1));	      /* Wait Until PLL Locked    */
+ 33c:	2401      	movs	r4, #1
+  LPC_SYSCTL->SYSPLLCLKUEN  = 0x0;               /* Toggle Update Register   */
+  LPC_SYSCTL->SYSPLLCLKUEN  = 0x1;
+  while (!(LPC_SYSCTL->SYSPLLCLKUEN & 0x1));     /* Wait Until Updated       */
+#if (SYSPLL_SETUP)                                /* System PLL Setup         */
+  LPC_SYSCTL->SYSPLLCTRL    = SYSPLLCTRL_Val;
+  LPC_SYSCTL->PDRUNCFG     &= ~(1 << 7);          /* Power-up SYSPLL          */
+ 33e:	4382      	bics	r2, r0
+ 340:	505a      	str	r2, [r3, r1]
+  while (!(LPC_SYSCTL->SYSPLLSTAT & 0x1));	      /* Wait Until PLL Locked    */
+ 342:	1c1a      	adds	r2, r3, #0
+ 344:	68d1      	ldr	r1, [r2, #12]
+ 346:	4b0f      	ldr	r3, [pc, #60]	; (384 <SystemInit+0x88>)
+ 348:	2001      	movs	r0, #1
+ 34a:	420c      	tst	r4, r1
+ 34c:	d0fa      	beq.n	344 <SystemInit+0x48>
+  LPC_SYSCTL->WDTOSCCTRL    = WDTOSCCTRL_Val;
+  LPC_SYSCTL->PDRUNCFG     &= ~(1 << 6);          /* Power-up WDT Clock       */
+#endif
+  LPC_SYSCTL->MAINCLKSEL    = MAINCLKSEL_Val;     /* Select PLL Clock Output  */
+  LPC_SYSCTL->MAINCLKUEN    = 0x1;               /* Update MCLK Clock Source */
+  LPC_SYSCTL->MAINCLKUEN    = 0x0;               /* Toggle Update Register   */
+ 34e:	2200      	movs	r2, #0
+#endif
+#if (WDTOSC_SETUP)                                /* Watchdog Oscillator Setup*/
+  LPC_SYSCTL->WDTOSCCTRL    = WDTOSCCTRL_Val;
+  LPC_SYSCTL->PDRUNCFG     &= ~(1 << 6);          /* Power-up WDT Clock       */
+#endif
+  LPC_SYSCTL->MAINCLKSEL    = MAINCLKSEL_Val;     /* Select PLL Clock Output  */
+ 350:	6718      	str	r0, [r3, #112]	; 0x70
+  LPC_SYSCTL->MAINCLKUEN    = 0x1;               /* Update MCLK Clock Source */
+ 352:	6758      	str	r0, [r3, #116]	; 0x74
+  LPC_SYSCTL->MAINCLKUEN    = 0x0;               /* Toggle Update Register   */
+ 354:	675a      	str	r2, [r3, #116]	; 0x74
+  LPC_SYSCTL->MAINCLKUEN    = 0x1;
+ 356:	6758      	str	r0, [r3, #116]	; 0x74
+  while (!(LPC_SYSCTL->MAINCLKUEN & 0x1));       /* Wait Until Updated       */
+ 358:	6f5a      	ldr	r2, [r3, #116]	; 0x74
+ 35a:	490a      	ldr	r1, [pc, #40]	; (384 <SystemInit+0x88>)
+ 35c:	4210      	tst	r0, r2
+ 35e:	d0fb      	beq.n	358 <SystemInit+0x5c>
+#endif
+  LPC_SYSCTL->PDRUNCFG     |=  (1 << 10);         /* Power-down USB PHY       */
+ 360:	238e      	movs	r3, #142	; 0x8e
+ 362:	2080      	movs	r0, #128	; 0x80
+ 364:	009b      	lsls	r3, r3, #2
+ 366:	58ca      	ldr	r2, [r1, r3]
+ 368:	00c0      	lsls	r0, r0, #3
+ 36a:	4302      	orrs	r2, r0
+  LPC_SYSCTL->PDRUNCFG     |=  (1 <<  8);         /* Power-down USB PLL       */
+ 36c:	2080      	movs	r0, #128	; 0x80
+  LPC_SYSCTL->MAINCLKUEN    = 0x1;               /* Update MCLK Clock Source */
+  LPC_SYSCTL->MAINCLKUEN    = 0x0;               /* Toggle Update Register   */
+  LPC_SYSCTL->MAINCLKUEN    = 0x1;
+  while (!(LPC_SYSCTL->MAINCLKUEN & 0x1));       /* Wait Until Updated       */
+#endif
+  LPC_SYSCTL->PDRUNCFG     |=  (1 << 10);         /* Power-down USB PHY       */
+ 36e:	50ca      	str	r2, [r1, r3]
+  LPC_SYSCTL->PDRUNCFG     |=  (1 <<  8);         /* Power-down USB PLL       */
+ 370:	58ca      	ldr	r2, [r1, r3]
+ 372:	0040      	lsls	r0, r0, #1
+ 374:	4302      	orrs	r2, r0
+ 376:	50ca      	str	r2, [r1, r3]
+
+  LPC_SYSCTL->SYSAHBCLKDIV  = SYSAHBCLKDIV_Val;
+ 378:	2301      	movs	r3, #1
+  LPC_SYSCTL->SYSAHBCLKCTRL = AHBCLKCTRL_Val;
+ 37a:	4a03      	ldr	r2, [pc, #12]	; (388 <SystemInit+0x8c>)
+  while (!(LPC_SYSCTL->MAINCLKUEN & 0x1));       /* Wait Until Updated       */
+#endif
+  LPC_SYSCTL->PDRUNCFG     |=  (1 << 10);         /* Power-down USB PHY       */
+  LPC_SYSCTL->PDRUNCFG     |=  (1 <<  8);         /* Power-down USB PLL       */
+
+  LPC_SYSCTL->SYSAHBCLKDIV  = SYSAHBCLKDIV_Val;
+ 37c:	678b      	str	r3, [r1, #120]	; 0x78
+  LPC_SYSCTL->SYSAHBCLKCTRL = AHBCLKCTRL_Val;
+ 37e:	337f      	adds	r3, #127	; 0x7f
+ 380:	50ca      	str	r2, [r1, r3]
+#endif
+
+#if (MEMMAP_SETUP || MEMMAP_INIT)       /* Memory Mapping Setup               */
+  LPC_SYSCTL->SYSMEMREMAP = SYSMEMREMAP_Val;
+#endif
+}
+ 382:	bd10      	pop	{r4, pc}
+ 384:	40048000 	.word	0x40048000
+ 388:	0001005f 	.word	0x0001005f
+
+0000038c <__aeabi_uidiv>:
+ 38c:	2200      	movs	r2, #0
+ 38e:	0843      	lsrs	r3, r0, #1
+ 390:	428b      	cmp	r3, r1
+ 392:	d374      	bcc.n	47e <__aeabi_uidiv+0xf2>
+ 394:	0903      	lsrs	r3, r0, #4
+ 396:	428b      	cmp	r3, r1
+ 398:	d35f      	bcc.n	45a <__aeabi_uidiv+0xce>
+ 39a:	0a03      	lsrs	r3, r0, #8
+ 39c:	428b      	cmp	r3, r1
+ 39e:	d344      	bcc.n	42a <__aeabi_uidiv+0x9e>
+ 3a0:	0b03      	lsrs	r3, r0, #12
+ 3a2:	428b      	cmp	r3, r1
+ 3a4:	d328      	bcc.n	3f8 <__aeabi_uidiv+0x6c>
+ 3a6:	0c03      	lsrs	r3, r0, #16
+ 3a8:	428b      	cmp	r3, r1
+ 3aa:	d30d      	bcc.n	3c8 <__aeabi_uidiv+0x3c>
+ 3ac:	22ff      	movs	r2, #255	; 0xff
+ 3ae:	0209      	lsls	r1, r1, #8
+ 3b0:	ba12      	rev	r2, r2
+ 3b2:	0c03      	lsrs	r3, r0, #16
+ 3b4:	428b      	cmp	r3, r1
+ 3b6:	d302      	bcc.n	3be <__aeabi_uidiv+0x32>
+ 3b8:	1212      	asrs	r2, r2, #8
+ 3ba:	0209      	lsls	r1, r1, #8
+ 3bc:	d065      	beq.n	48a <__aeabi_uidiv+0xfe>
+ 3be:	0b03      	lsrs	r3, r0, #12
+ 3c0:	428b      	cmp	r3, r1
+ 3c2:	d319      	bcc.n	3f8 <__aeabi_uidiv+0x6c>
+ 3c4:	e000      	b.n	3c8 <__aeabi_uidiv+0x3c>
+ 3c6:	0a09      	lsrs	r1, r1, #8
+ 3c8:	0bc3      	lsrs	r3, r0, #15
+ 3ca:	428b      	cmp	r3, r1
+ 3cc:	d301      	bcc.n	3d2 <__aeabi_uidiv+0x46>
+ 3ce:	03cb      	lsls	r3, r1, #15
+ 3d0:	1ac0      	subs	r0, r0, r3
+ 3d2:	4152      	adcs	r2, r2
+ 3d4:	0b83      	lsrs	r3, r0, #14
+ 3d6:	428b      	cmp	r3, r1
+ 3d8:	d301      	bcc.n	3de <__aeabi_uidiv+0x52>
+ 3da:	038b      	lsls	r3, r1, #14
+ 3dc:	1ac0      	subs	r0, r0, r3
+ 3de:	4152      	adcs	r2, r2
+ 3e0:	0b43      	lsrs	r3, r0, #13
+ 3e2:	428b      	cmp	r3, r1
+ 3e4:	d301      	bcc.n	3ea <__aeabi_uidiv+0x5e>
+ 3e6:	034b      	lsls	r3, r1, #13
+ 3e8:	1ac0      	subs	r0, r0, r3
+ 3ea:	4152      	adcs	r2, r2
+ 3ec:	0b03      	lsrs	r3, r0, #12
+ 3ee:	428b      	cmp	r3, r1
+ 3f0:	d301      	bcc.n	3f6 <__aeabi_uidiv+0x6a>
+ 3f2:	030b      	lsls	r3, r1, #12
+ 3f4:	1ac0      	subs	r0, r0, r3
+ 3f6:	4152      	adcs	r2, r2
+ 3f8:	0ac3      	lsrs	r3, r0, #11
+ 3fa:	428b      	cmp	r3, r1
+ 3fc:	d301      	bcc.n	402 <__aeabi_uidiv+0x76>
+ 3fe:	02cb      	lsls	r3, r1, #11
+ 400:	1ac0      	subs	r0, r0, r3
+ 402:	4152      	adcs	r2, r2
+ 404:	0a83      	lsrs	r3, r0, #10
+ 406:	428b      	cmp	r3, r1
+ 408:	d301      	bcc.n	40e <__aeabi_uidiv+0x82>
+ 40a:	028b      	lsls	r3, r1, #10
+ 40c:	1ac0      	subs	r0, r0, r3
+ 40e:	4152      	adcs	r2, r2
+ 410:	0a43      	lsrs	r3, r0, #9
+ 412:	428b      	cmp	r3, r1
+ 414:	d301      	bcc.n	41a <__aeabi_uidiv+0x8e>
+ 416:	024b      	lsls	r3, r1, #9
+ 418:	1ac0      	subs	r0, r0, r3
+ 41a:	4152      	adcs	r2, r2
+ 41c:	0a03      	lsrs	r3, r0, #8
+ 41e:	428b      	cmp	r3, r1
+ 420:	d301      	bcc.n	426 <__aeabi_uidiv+0x9a>
+ 422:	020b      	lsls	r3, r1, #8
+ 424:	1ac0      	subs	r0, r0, r3
+ 426:	4152      	adcs	r2, r2
+ 428:	d2cd      	bcs.n	3c6 <__aeabi_uidiv+0x3a>
+ 42a:	09c3      	lsrs	r3, r0, #7
+ 42c:	428b      	cmp	r3, r1
+ 42e:	d301      	bcc.n	434 <__aeabi_uidiv+0xa8>
+ 430:	01cb      	lsls	r3, r1, #7
+ 432:	1ac0      	subs	r0, r0, r3
+ 434:	4152      	adcs	r2, r2
+ 436:	0983      	lsrs	r3, r0, #6
+ 438:	428b      	cmp	r3, r1
+ 43a:	d301      	bcc.n	440 <__aeabi_uidiv+0xb4>
+ 43c:	018b      	lsls	r3, r1, #6
+ 43e:	1ac0      	subs	r0, r0, r3
+ 440:	4152      	adcs	r2, r2
+ 442:	0943      	lsrs	r3, r0, #5
+ 444:	428b      	cmp	r3, r1
+ 446:	d301      	bcc.n	44c <__aeabi_uidiv+0xc0>
+ 448:	014b      	lsls	r3, r1, #5
+ 44a:	1ac0      	subs	r0, r0, r3
+ 44c:	4152      	adcs	r2, r2
+ 44e:	0903      	lsrs	r3, r0, #4
+ 450:	428b      	cmp	r3, r1
+ 452:	d301      	bcc.n	458 <__aeabi_uidiv+0xcc>
+ 454:	010b      	lsls	r3, r1, #4
+ 456:	1ac0      	subs	r0, r0, r3
+ 458:	4152      	adcs	r2, r2
+ 45a:	08c3      	lsrs	r3, r0, #3
+ 45c:	428b      	cmp	r3, r1
+ 45e:	d301      	bcc.n	464 <__aeabi_uidiv+0xd8>
+ 460:	00cb      	lsls	r3, r1, #3
+ 462:	1ac0      	subs	r0, r0, r3
+ 464:	4152      	adcs	r2, r2
+ 466:	0883      	lsrs	r3, r0, #2
+ 468:	428b      	cmp	r3, r1
+ 46a:	d301      	bcc.n	470 <__aeabi_uidiv+0xe4>
+ 46c:	008b      	lsls	r3, r1, #2
+ 46e:	1ac0      	subs	r0, r0, r3
+ 470:	4152      	adcs	r2, r2
+ 472:	0843      	lsrs	r3, r0, #1
+ 474:	428b      	cmp	r3, r1
+ 476:	d301      	bcc.n	47c <__aeabi_uidiv+0xf0>
+ 478:	004b      	lsls	r3, r1, #1
+ 47a:	1ac0      	subs	r0, r0, r3
+ 47c:	4152      	adcs	r2, r2
+ 47e:	1a41      	subs	r1, r0, r1
+ 480:	d200      	bcs.n	484 <__aeabi_uidiv+0xf8>
+ 482:	4601      	mov	r1, r0
+ 484:	4152      	adcs	r2, r2
+ 486:	4610      	mov	r0, r2
+ 488:	4770      	bx	lr
+ 48a:	e7ff      	b.n	48c <__aeabi_uidiv+0x100>
+ 48c:	b501      	push	{r0, lr}
+ 48e:	2000      	movs	r0, #0
+ 490:	f000 f80c 	bl	4ac <__aeabi_idiv0>
+ 494:	bd02      	pop	{r1, pc}
+ 496:	46c0      	nop			; (mov r8, r8)
+
+00000498 <__aeabi_uidivmod>:
+ 498:	2900      	cmp	r1, #0
+ 49a:	d0f7      	beq.n	48c <__aeabi_uidiv+0x100>
+ 49c:	b503      	push	{r0, r1, lr}
+ 49e:	f7ff ff75 	bl	38c <__aeabi_uidiv>
+ 4a2:	bc0e      	pop	{r1, r2, r3}
+ 4a4:	4342      	muls	r2, r0
+ 4a6:	1a89      	subs	r1, r1, r2
+ 4a8:	4718      	bx	r3
+ 4aa:	46c0      	nop			; (mov r8, r8)
+
+000004ac <__aeabi_idiv0>:
+ 4ac:	4770      	bx	lr
+ 4ae:	46c0      	nop			; (mov r8, r8)
+
+000004b0 <wdtOSCRate>:
+ 4b0:	0000 0000 27c0 0009 0590 0010 5cc0 0015     .....'.......\..
+ 4c0:	b3f0 001a 0b20 0020 9f00 0024 32e0 0029     .... . ...$..2).
+ 4d0:	c6c0 002d 9750 0031 67e0 0035 3870 0039     ..-.P.1..g5.p89.
+ 4e0:	0900 003d 1640 0040 2380 0043 30c0 0046     ..=.@.@..#C..0F.
+
+000004f0 <OscRateIn>:
+ 4f0:	1b00 00b7                                   ....

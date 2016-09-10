@@ -1,0 +1,1993 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o)
+                              bin/ssp_11xx.o (__aeabi_uidiv)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_dvmd_tls.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memcpy.o)
+                              bin/ring_buffer.o (memcpy)
+
+Allocating common symbols
+Common symbol       size              file
+
+msTicks             0x4               bin/blink.o
+
+Discarded input sections
+
+ .data          0x0000000000000000        0x0 bin/startup_LPC11xx.o
+ .bss           0x0000000000000000        0x0 bin/startup_LPC11xx.o
+ .ARM.extab.isr_vector
+                0x0000000000000000        0x0 bin/startup_LPC11xx.o
+ .group         0x0000000000000000        0x8 bin/ssp_11xx.o
+ .group         0x0000000000000000        0x8 bin/ssp_11xx.o
+ .group         0x0000000000000000        0x8 bin/ssp_11xx.o
+ .group         0x0000000000000000        0x8 bin/ssp_11xx.o
+ .group         0x0000000000000000        0x8 bin/ssp_11xx.o
+ .group         0x0000000000000000        0x8 bin/ssp_11xx.o
+ .group         0x0000000000000000        0x8 bin/ssp_11xx.o
+ .group         0x0000000000000000        0x8 bin/ssp_11xx.o
+ .group         0x0000000000000000        0x8 bin/ssp_11xx.o
+ .group         0x0000000000000000        0x8 bin/ssp_11xx.o
+ .group         0x0000000000000000        0x8 bin/ssp_11xx.o
+ .group         0x0000000000000000        0x8 bin/ssp_11xx.o
+ .group         0x0000000000000000        0x8 bin/ssp_11xx.o
+ .group         0x0000000000000000        0x8 bin/ssp_11xx.o
+ .group         0x0000000000000000        0x8 bin/ssp_11xx.o
+ .group         0x0000000000000000        0x8 bin/ssp_11xx.o
+ .group         0x0000000000000000        0x8 bin/ssp_11xx.o
+ .group         0x0000000000000000        0x8 bin/ssp_11xx.o
+ .group         0x0000000000000000        0x8 bin/ssp_11xx.o
+ .group         0x0000000000000000        0x8 bin/ssp_11xx.o
+ .group         0x0000000000000000        0x8 bin/ssp_11xx.o
+ .group         0x0000000000000000        0x8 bin/ssp_11xx.o
+ .group         0x0000000000000000        0x8 bin/ssp_11xx.o
+ .group         0x0000000000000000        0x8 bin/ssp_11xx.o
+ .group         0x0000000000000000        0x8 bin/ssp_11xx.o
+ .group         0x0000000000000000        0x8 bin/ssp_11xx.o
+ .text          0x0000000000000000        0x0 bin/ssp_11xx.o
+ .data          0x0000000000000000        0x0 bin/ssp_11xx.o
+ .bss           0x0000000000000000        0x0 bin/ssp_11xx.o
+ .text.SSP_Read1BFifo
+                0x0000000000000000       0x34 bin/ssp_11xx.o
+ .text.Chip_SSP_SetClockRate
+                0x0000000000000000       0x18 bin/ssp_11xx.o
+ .text.Chip_SSP_RWFrames_Blocking
+                0x0000000000000000      0x118 bin/ssp_11xx.o
+ .text.Chip_SSP_WriteFrames_Blocking
+                0x0000000000000000       0xc8 bin/ssp_11xx.o
+ .text.Chip_SSP_ReadFrames_Blocking
+                0x0000000000000000       0xdc bin/ssp_11xx.o
+ .text.Chip_SSP_Int_FlushData
+                0x0000000000000000       0x24 bin/ssp_11xx.o
+ .text.Chip_SSP_Int_RWFrames8Bits
+                0x0000000000000000       0x84 bin/ssp_11xx.o
+ .text.Chip_SSP_Int_RWFrames16Bits
+                0x0000000000000000       0xc8 bin/ssp_11xx.o
+ .text.Chip_SSP_SetMaster
+                0x0000000000000000       0x18 bin/ssp_11xx.o
+ .text.Chip_SSP_SetBitRate
+                0x0000000000000000       0x90 bin/ssp_11xx.o
+ .text.Chip_SSP_Init
+                0x0000000000000000       0x70 bin/ssp_11xx.o
+ .text.Chip_SSP_DeInit
+                0x0000000000000000       0x48 bin/ssp_11xx.o
+ .debug_info    0x0000000000000000     0x1c7a bin/ssp_11xx.o
+ .debug_abbrev  0x0000000000000000      0x3f0 bin/ssp_11xx.o
+ .debug_loc     0x0000000000000000     0x12f3 bin/ssp_11xx.o
+ .debug_aranges
+                0x0000000000000000       0x78 bin/ssp_11xx.o
+ .debug_ranges  0x0000000000000000      0x7d8 bin/ssp_11xx.o
+ .debug_macro   0x0000000000000000      0x160 bin/ssp_11xx.o
+ .debug_macro   0x0000000000000000      0x81a bin/ssp_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/ssp_11xx.o
+ .debug_macro   0x0000000000000000       0x44 bin/ssp_11xx.o
+ .debug_macro   0x0000000000000000       0xe3 bin/ssp_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/ssp_11xx.o
+ .debug_macro   0x0000000000000000      0x1df bin/ssp_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/ssp_11xx.o
+ .debug_macro   0x0000000000000000       0x6d bin/ssp_11xx.o
+ .debug_macro   0x0000000000000000       0x10 bin/ssp_11xx.o
+ .debug_macro   0x0000000000000000       0x1f bin/ssp_11xx.o
+ .debug_macro   0x0000000000000000       0x3a bin/ssp_11xx.o
+ .debug_macro   0x0000000000000000      0x241 bin/ssp_11xx.o
+ .debug_macro   0x0000000000000000      0x11e bin/ssp_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/ssp_11xx.o
+ .debug_macro   0x0000000000000000       0xb2 bin/ssp_11xx.o
+ .debug_macro   0x0000000000000000       0x10 bin/ssp_11xx.o
+ .debug_macro   0x0000000000000000      0x137 bin/ssp_11xx.o
+ .debug_macro   0x0000000000000000       0x4c bin/ssp_11xx.o
+ .debug_macro   0x0000000000000000       0x16 bin/ssp_11xx.o
+ .debug_macro   0x0000000000000000      0x31a bin/ssp_11xx.o
+ .debug_macro   0x0000000000000000       0x2e bin/ssp_11xx.o
+ .debug_macro   0x0000000000000000       0xb8 bin/ssp_11xx.o
+ .debug_macro   0x0000000000000000       0x11 bin/ssp_11xx.o
+ .debug_macro   0x0000000000000000       0x7c bin/ssp_11xx.o
+ .debug_macro   0x0000000000000000      0x21c bin/ssp_11xx.o
+ .debug_macro   0x0000000000000000      0x129 bin/ssp_11xx.o
+ .debug_line    0x0000000000000000      0x9de bin/ssp_11xx.o
+ .debug_str     0x0000000000000000     0x7eb3 bin/ssp_11xx.o
+ .comment       0x0000000000000000       0x71 bin/ssp_11xx.o
+ .debug_frame   0x0000000000000000      0x194 bin/ssp_11xx.o
+ .ARM.attributes
+                0x0000000000000000       0x31 bin/ssp_11xx.o
+ .group         0x0000000000000000        0x8 bin/i2c_11xx.o
+ .group         0x0000000000000000        0x8 bin/i2c_11xx.o
+ .group         0x0000000000000000        0x8 bin/i2c_11xx.o
+ .group         0x0000000000000000        0x8 bin/i2c_11xx.o
+ .group         0x0000000000000000        0x8 bin/i2c_11xx.o
+ .group         0x0000000000000000        0x8 bin/i2c_11xx.o
+ .group         0x0000000000000000        0x8 bin/i2c_11xx.o
+ .group         0x0000000000000000        0x8 bin/i2c_11xx.o
+ .group         0x0000000000000000        0x8 bin/i2c_11xx.o
+ .group         0x0000000000000000        0x8 bin/i2c_11xx.o
+ .group         0x0000000000000000        0x8 bin/i2c_11xx.o
+ .group         0x0000000000000000        0x8 bin/i2c_11xx.o
+ .group         0x0000000000000000        0x8 bin/i2c_11xx.o
+ .group         0x0000000000000000        0x8 bin/i2c_11xx.o
+ .group         0x0000000000000000        0x8 bin/i2c_11xx.o
+ .group         0x0000000000000000        0x8 bin/i2c_11xx.o
+ .group         0x0000000000000000        0x8 bin/i2c_11xx.o
+ .group         0x0000000000000000        0x8 bin/i2c_11xx.o
+ .group         0x0000000000000000        0x8 bin/i2c_11xx.o
+ .group         0x0000000000000000        0x8 bin/i2c_11xx.o
+ .group         0x0000000000000000        0x8 bin/i2c_11xx.o
+ .group         0x0000000000000000        0x8 bin/i2c_11xx.o
+ .group         0x0000000000000000        0x8 bin/i2c_11xx.o
+ .group         0x0000000000000000        0x8 bin/i2c_11xx.o
+ .group         0x0000000000000000        0x8 bin/i2c_11xx.o
+ .group         0x0000000000000000        0x8 bin/i2c_11xx.o
+ .text          0x0000000000000000        0x0 bin/i2c_11xx.o
+ .data          0x0000000000000000        0x0 bin/i2c_11xx.o
+ .bss           0x0000000000000000        0x0 bin/i2c_11xx.o
+ .text.Chip_I2C_EventHandler
+                0x0000000000000000       0x18 bin/i2c_11xx.o
+ .text.handleMasterXferState
+                0x0000000000000000       0xfc bin/i2c_11xx.o
+ .rodata.handleMasterXferState
+                0x0000000000000000      0x164 bin/i2c_11xx.o
+ .text.getSlaveIndex
+                0x0000000000000000       0x88 bin/i2c_11xx.o
+ .text.handleSlaveXferState
+                0x0000000000000000       0xac bin/i2c_11xx.o
+ .rodata.handleSlaveXferState
+                0x0000000000000000      0x1a4 bin/i2c_11xx.o
+ .text.Chip_I2C_Init
+                0x0000000000000000       0x3c bin/i2c_11xx.o
+ .text.Chip_I2C_DeInit
+                0x0000000000000000       0x24 bin/i2c_11xx.o
+ .text.Chip_I2C_SetClockRate
+                0x0000000000000000       0x24 bin/i2c_11xx.o
+ .text.Chip_I2C_GetClockRate
+                0x0000000000000000       0x20 bin/i2c_11xx.o
+ .text.Chip_I2C_SetMasterEventHandler
+                0x0000000000000000       0x20 bin/i2c_11xx.o
+ .text.Chip_I2C_GetMasterEventHandler
+                0x0000000000000000        0xc bin/i2c_11xx.o
+ .text.Chip_I2C_MasterTransfer
+                0x0000000000000000       0x60 bin/i2c_11xx.o
+ .text.Chip_I2C_MasterSend
+                0x0000000000000000       0x28 bin/i2c_11xx.o
+ .text.Chip_I2C_MasterCmdRead
+                0x0000000000000000       0x30 bin/i2c_11xx.o
+ .text.Chip_I2C_MasterRead
+                0x0000000000000000       0x28 bin/i2c_11xx.o
+ .text.Chip_I2C_IsMasterActive
+                0x0000000000000000       0x1c bin/i2c_11xx.o
+ .text.Chip_I2C_MasterStateHandler
+                0x0000000000000000       0x20 bin/i2c_11xx.o
+ .text.Chip_I2C_EventHandlerPolling
+                0x0000000000000000       0x2c bin/i2c_11xx.o
+ .text.Chip_I2C_SlaveSetup
+                0x0000000000000000       0x70 bin/i2c_11xx.o
+ .text.Chip_I2C_SlaveStateHandler
+                0x0000000000000000       0x60 bin/i2c_11xx.o
+ .text.Chip_I2C_Disable
+                0x0000000000000000       0x10 bin/i2c_11xx.o
+ .text.Chip_I2C_IsStateChanged
+                0x0000000000000000       0x10 bin/i2c_11xx.o
+ .data.i2c      0x0000000000000000       0x1c bin/i2c_11xx.o
+ .bss.i2c_slave
+                0x0000000000000000       0x28 bin/i2c_11xx.o
+ .debug_info    0x0000000000000000     0x1442 bin/i2c_11xx.o
+ .debug_abbrev  0x0000000000000000      0x4b0 bin/i2c_11xx.o
+ .debug_loc     0x0000000000000000      0xb3d bin/i2c_11xx.o
+ .debug_aranges
+                0x0000000000000000       0xc0 bin/i2c_11xx.o
+ .debug_ranges  0x0000000000000000      0x220 bin/i2c_11xx.o
+ .debug_macro   0x0000000000000000      0x172 bin/i2c_11xx.o
+ .debug_macro   0x0000000000000000      0x81a bin/i2c_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/i2c_11xx.o
+ .debug_macro   0x0000000000000000       0x44 bin/i2c_11xx.o
+ .debug_macro   0x0000000000000000       0xe3 bin/i2c_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/i2c_11xx.o
+ .debug_macro   0x0000000000000000      0x1df bin/i2c_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/i2c_11xx.o
+ .debug_macro   0x0000000000000000       0x6d bin/i2c_11xx.o
+ .debug_macro   0x0000000000000000       0x10 bin/i2c_11xx.o
+ .debug_macro   0x0000000000000000       0x1f bin/i2c_11xx.o
+ .debug_macro   0x0000000000000000       0x3a bin/i2c_11xx.o
+ .debug_macro   0x0000000000000000      0x241 bin/i2c_11xx.o
+ .debug_macro   0x0000000000000000      0x11e bin/i2c_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/i2c_11xx.o
+ .debug_macro   0x0000000000000000       0xb2 bin/i2c_11xx.o
+ .debug_macro   0x0000000000000000       0x10 bin/i2c_11xx.o
+ .debug_macro   0x0000000000000000      0x137 bin/i2c_11xx.o
+ .debug_macro   0x0000000000000000       0x4c bin/i2c_11xx.o
+ .debug_macro   0x0000000000000000       0x16 bin/i2c_11xx.o
+ .debug_macro   0x0000000000000000      0x31a bin/i2c_11xx.o
+ .debug_macro   0x0000000000000000       0x2e bin/i2c_11xx.o
+ .debug_macro   0x0000000000000000       0xb8 bin/i2c_11xx.o
+ .debug_macro   0x0000000000000000       0x11 bin/i2c_11xx.o
+ .debug_macro   0x0000000000000000       0x7c bin/i2c_11xx.o
+ .debug_macro   0x0000000000000000      0x21c bin/i2c_11xx.o
+ .debug_macro   0x0000000000000000      0x129 bin/i2c_11xx.o
+ .debug_line    0x0000000000000000      0x63b bin/i2c_11xx.o
+ .debug_str     0x0000000000000000     0x7c37 bin/i2c_11xx.o
+ .comment       0x0000000000000000       0x71 bin/i2c_11xx.o
+ .debug_frame   0x0000000000000000      0x23c bin/i2c_11xx.o
+ .ARM.attributes
+                0x0000000000000000       0x31 bin/i2c_11xx.o
+ .group         0x0000000000000000        0x8 bin/wwdt_11xx.o
+ .group         0x0000000000000000        0x8 bin/wwdt_11xx.o
+ .group         0x0000000000000000        0x8 bin/wwdt_11xx.o
+ .group         0x0000000000000000        0x8 bin/wwdt_11xx.o
+ .group         0x0000000000000000        0x8 bin/wwdt_11xx.o
+ .group         0x0000000000000000        0x8 bin/wwdt_11xx.o
+ .group         0x0000000000000000        0x8 bin/wwdt_11xx.o
+ .group         0x0000000000000000        0x8 bin/wwdt_11xx.o
+ .group         0x0000000000000000        0x8 bin/wwdt_11xx.o
+ .group         0x0000000000000000        0x8 bin/wwdt_11xx.o
+ .group         0x0000000000000000        0x8 bin/wwdt_11xx.o
+ .group         0x0000000000000000        0x8 bin/wwdt_11xx.o
+ .group         0x0000000000000000        0x8 bin/wwdt_11xx.o
+ .group         0x0000000000000000        0x8 bin/wwdt_11xx.o
+ .group         0x0000000000000000        0x8 bin/wwdt_11xx.o
+ .group         0x0000000000000000        0x8 bin/wwdt_11xx.o
+ .group         0x0000000000000000        0x8 bin/wwdt_11xx.o
+ .group         0x0000000000000000        0x8 bin/wwdt_11xx.o
+ .group         0x0000000000000000        0x8 bin/wwdt_11xx.o
+ .group         0x0000000000000000        0x8 bin/wwdt_11xx.o
+ .group         0x0000000000000000        0x8 bin/wwdt_11xx.o
+ .group         0x0000000000000000        0x8 bin/wwdt_11xx.o
+ .group         0x0000000000000000        0x8 bin/wwdt_11xx.o
+ .group         0x0000000000000000        0x8 bin/wwdt_11xx.o
+ .group         0x0000000000000000        0x8 bin/wwdt_11xx.o
+ .group         0x0000000000000000        0x8 bin/wwdt_11xx.o
+ .text          0x0000000000000000        0x0 bin/wwdt_11xx.o
+ .data          0x0000000000000000        0x0 bin/wwdt_11xx.o
+ .bss           0x0000000000000000        0x0 bin/wwdt_11xx.o
+ .text.Chip_WWDT_Init
+                0x0000000000000000       0x20 bin/wwdt_11xx.o
+ .text.Chip_WWDT_DeInit
+                0x0000000000000000       0x18 bin/wwdt_11xx.o
+ .text.Chip_WWDT_ClearStatusFlag
+                0x0000000000000000       0x1c bin/wwdt_11xx.o
+ .debug_info    0x0000000000000000      0x699 bin/wwdt_11xx.o
+ .debug_abbrev  0x0000000000000000      0x14e bin/wwdt_11xx.o
+ .debug_loc     0x0000000000000000       0x21 bin/wwdt_11xx.o
+ .debug_aranges
+                0x0000000000000000       0x30 bin/wwdt_11xx.o
+ .debug_ranges  0x0000000000000000       0x58 bin/wwdt_11xx.o
+ .debug_macro   0x0000000000000000      0x160 bin/wwdt_11xx.o
+ .debug_macro   0x0000000000000000      0x81a bin/wwdt_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/wwdt_11xx.o
+ .debug_macro   0x0000000000000000       0x44 bin/wwdt_11xx.o
+ .debug_macro   0x0000000000000000       0xe3 bin/wwdt_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/wwdt_11xx.o
+ .debug_macro   0x0000000000000000      0x1df bin/wwdt_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/wwdt_11xx.o
+ .debug_macro   0x0000000000000000       0x6d bin/wwdt_11xx.o
+ .debug_macro   0x0000000000000000       0x10 bin/wwdt_11xx.o
+ .debug_macro   0x0000000000000000       0x1f bin/wwdt_11xx.o
+ .debug_macro   0x0000000000000000       0x3a bin/wwdt_11xx.o
+ .debug_macro   0x0000000000000000      0x241 bin/wwdt_11xx.o
+ .debug_macro   0x0000000000000000      0x11e bin/wwdt_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/wwdt_11xx.o
+ .debug_macro   0x0000000000000000       0xb2 bin/wwdt_11xx.o
+ .debug_macro   0x0000000000000000       0x10 bin/wwdt_11xx.o
+ .debug_macro   0x0000000000000000      0x137 bin/wwdt_11xx.o
+ .debug_macro   0x0000000000000000       0x4c bin/wwdt_11xx.o
+ .debug_macro   0x0000000000000000       0x16 bin/wwdt_11xx.o
+ .debug_macro   0x0000000000000000      0x31a bin/wwdt_11xx.o
+ .debug_macro   0x0000000000000000       0x2e bin/wwdt_11xx.o
+ .debug_macro   0x0000000000000000       0xb8 bin/wwdt_11xx.o
+ .debug_macro   0x0000000000000000       0x11 bin/wwdt_11xx.o
+ .debug_macro   0x0000000000000000       0x7c bin/wwdt_11xx.o
+ .debug_macro   0x0000000000000000      0x21c bin/wwdt_11xx.o
+ .debug_macro   0x0000000000000000      0x129 bin/wwdt_11xx.o
+ .debug_line    0x0000000000000000      0x328 bin/wwdt_11xx.o
+ .debug_str     0x0000000000000000     0x76d3 bin/wwdt_11xx.o
+ .comment       0x0000000000000000       0x71 bin/wwdt_11xx.o
+ .debug_frame   0x0000000000000000       0x4c bin/wwdt_11xx.o
+ .ARM.attributes
+                0x0000000000000000       0x31 bin/wwdt_11xx.o
+ .group         0x0000000000000000        0x8 bin/clock_11xx.o
+ .group         0x0000000000000000        0x8 bin/clock_11xx.o
+ .group         0x0000000000000000        0x8 bin/clock_11xx.o
+ .group         0x0000000000000000        0x8 bin/clock_11xx.o
+ .group         0x0000000000000000        0x8 bin/clock_11xx.o
+ .group         0x0000000000000000        0x8 bin/clock_11xx.o
+ .group         0x0000000000000000        0x8 bin/clock_11xx.o
+ .group         0x0000000000000000        0x8 bin/clock_11xx.o
+ .group         0x0000000000000000        0x8 bin/clock_11xx.o
+ .group         0x0000000000000000        0x8 bin/clock_11xx.o
+ .group         0x0000000000000000        0x8 bin/clock_11xx.o
+ .group         0x0000000000000000        0x8 bin/clock_11xx.o
+ .group         0x0000000000000000        0x8 bin/clock_11xx.o
+ .group         0x0000000000000000        0x8 bin/clock_11xx.o
+ .group         0x0000000000000000        0x8 bin/clock_11xx.o
+ .group         0x0000000000000000        0x8 bin/clock_11xx.o
+ .group         0x0000000000000000        0x8 bin/clock_11xx.o
+ .group         0x0000000000000000        0x8 bin/clock_11xx.o
+ .group         0x0000000000000000        0x8 bin/clock_11xx.o
+ .group         0x0000000000000000        0x8 bin/clock_11xx.o
+ .group         0x0000000000000000        0x8 bin/clock_11xx.o
+ .group         0x0000000000000000        0x8 bin/clock_11xx.o
+ .group         0x0000000000000000        0x8 bin/clock_11xx.o
+ .group         0x0000000000000000        0x8 bin/clock_11xx.o
+ .group         0x0000000000000000        0x8 bin/clock_11xx.o
+ .group         0x0000000000000000        0x8 bin/clock_11xx.o
+ .text          0x0000000000000000        0x0 bin/clock_11xx.o
+ .data          0x0000000000000000        0x0 bin/clock_11xx.o
+ .bss           0x0000000000000000        0x0 bin/clock_11xx.o
+ .text.Chip_Clock_SetSystemPLLSource
+                0x0000000000000000       0x14 bin/clock_11xx.o
+ .text.Chip_Clock_SetPLLBypass
+                0x0000000000000000       0x14 bin/clock_11xx.o
+ .text.Chip_Clock_SetMainClockSource
+                0x0000000000000000       0x14 bin/clock_11xx.o
+ .text.Chip_Clock_SetWDTClockSource
+                0x0000000000000000       0x1c bin/clock_11xx.o
+ .text.Chip_Clock_SetCLKOUTSource
+                0x0000000000000000       0x1c bin/clock_11xx.o
+ .text.Chip_Clock_GetWDTOSCRate
+                0x0000000000000000       0x28 bin/clock_11xx.o
+ .text.Chip_Clock_GetSystemPLLInClockRate
+                0x0000000000000000       0x28 bin/clock_11xx.o
+ .debug_macro   0x0000000000000000      0x81a bin/clock_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/clock_11xx.o
+ .debug_macro   0x0000000000000000       0x44 bin/clock_11xx.o
+ .debug_macro   0x0000000000000000       0xe3 bin/clock_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/clock_11xx.o
+ .debug_macro   0x0000000000000000      0x1df bin/clock_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/clock_11xx.o
+ .debug_macro   0x0000000000000000       0x6d bin/clock_11xx.o
+ .debug_macro   0x0000000000000000       0x10 bin/clock_11xx.o
+ .debug_macro   0x0000000000000000       0x1f bin/clock_11xx.o
+ .debug_macro   0x0000000000000000       0x3a bin/clock_11xx.o
+ .debug_macro   0x0000000000000000      0x241 bin/clock_11xx.o
+ .debug_macro   0x0000000000000000      0x11e bin/clock_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/clock_11xx.o
+ .debug_macro   0x0000000000000000       0xb2 bin/clock_11xx.o
+ .debug_macro   0x0000000000000000       0x10 bin/clock_11xx.o
+ .debug_macro   0x0000000000000000      0x137 bin/clock_11xx.o
+ .debug_macro   0x0000000000000000       0x4c bin/clock_11xx.o
+ .debug_macro   0x0000000000000000       0x16 bin/clock_11xx.o
+ .debug_macro   0x0000000000000000      0x31a bin/clock_11xx.o
+ .debug_macro   0x0000000000000000       0x2e bin/clock_11xx.o
+ .debug_macro   0x0000000000000000       0xb8 bin/clock_11xx.o
+ .debug_macro   0x0000000000000000       0x11 bin/clock_11xx.o
+ .debug_macro   0x0000000000000000       0x7c bin/clock_11xx.o
+ .debug_macro   0x0000000000000000      0x21c bin/clock_11xx.o
+ .debug_macro   0x0000000000000000      0x129 bin/clock_11xx.o
+ .group         0x0000000000000000        0x8 bin/ring_buffer.o
+ .group         0x0000000000000000        0x8 bin/ring_buffer.o
+ .group         0x0000000000000000        0x8 bin/ring_buffer.o
+ .group         0x0000000000000000        0x8 bin/ring_buffer.o
+ .group         0x0000000000000000        0x8 bin/ring_buffer.o
+ .group         0x0000000000000000        0x8 bin/ring_buffer.o
+ .group         0x0000000000000000        0x8 bin/ring_buffer.o
+ .group         0x0000000000000000        0x8 bin/ring_buffer.o
+ .group         0x0000000000000000        0x8 bin/ring_buffer.o
+ .group         0x0000000000000000        0x8 bin/ring_buffer.o
+ .group         0x0000000000000000        0x8 bin/ring_buffer.o
+ .group         0x0000000000000000        0x8 bin/ring_buffer.o
+ .group         0x0000000000000000        0x8 bin/ring_buffer.o
+ .group         0x0000000000000000        0x8 bin/ring_buffer.o
+ .group         0x0000000000000000        0x8 bin/ring_buffer.o
+ .group         0x0000000000000000        0x8 bin/ring_buffer.o
+ .group         0x0000000000000000        0x8 bin/ring_buffer.o
+ .group         0x0000000000000000        0x8 bin/ring_buffer.o
+ .group         0x0000000000000000        0x8 bin/ring_buffer.o
+ .group         0x0000000000000000        0x8 bin/ring_buffer.o
+ .text          0x0000000000000000        0x0 bin/ring_buffer.o
+ .data          0x0000000000000000        0x0 bin/ring_buffer.o
+ .bss           0x0000000000000000        0x0 bin/ring_buffer.o
+ .text.RingBuffer_Init
+                0x0000000000000000       0x10 bin/ring_buffer.o
+ .text.RingBuffer_Insert
+                0x0000000000000000       0x30 bin/ring_buffer.o
+ .text.RingBuffer_InsertMult
+                0x0000000000000000       0x90 bin/ring_buffer.o
+ .text.RingBuffer_Pop
+                0x0000000000000000       0x30 bin/ring_buffer.o
+ .text.RingBuffer_PopMult
+                0x0000000000000000       0x90 bin/ring_buffer.o
+ .debug_info    0x0000000000000000      0x4bc bin/ring_buffer.o
+ .debug_abbrev  0x0000000000000000      0x173 bin/ring_buffer.o
+ .debug_loc     0x0000000000000000      0x7bc bin/ring_buffer.o
+ .debug_aranges
+                0x0000000000000000       0x40 bin/ring_buffer.o
+ .debug_ranges  0x0000000000000000      0x108 bin/ring_buffer.o
+ .debug_macro   0x0000000000000000      0x129 bin/ring_buffer.o
+ .debug_macro   0x0000000000000000      0x81a bin/ring_buffer.o
+ .debug_macro   0x0000000000000000       0x58 bin/ring_buffer.o
+ .debug_macro   0x0000000000000000       0x22 bin/ring_buffer.o
+ .debug_macro   0x0000000000000000       0x35 bin/ring_buffer.o
+ .debug_macro   0x0000000000000000       0x9c bin/ring_buffer.o
+ .debug_macro   0x0000000000000000      0x166 bin/ring_buffer.o
+ .debug_macro   0x0000000000000000       0x4a bin/ring_buffer.o
+ .debug_macro   0x0000000000000000       0x52 bin/ring_buffer.o
+ .debug_macro   0x0000000000000000       0x16 bin/ring_buffer.o
+ .debug_macro   0x0000000000000000       0x43 bin/ring_buffer.o
+ .debug_macro   0x0000000000000000      0x180 bin/ring_buffer.o
+ .debug_macro   0x0000000000000000      0x29d bin/ring_buffer.o
+ .debug_macro   0x0000000000000000       0x10 bin/ring_buffer.o
+ .debug_macro   0x0000000000000000       0x35 bin/ring_buffer.o
+ .debug_macro   0x0000000000000000       0xe3 bin/ring_buffer.o
+ .debug_macro   0x0000000000000000       0x22 bin/ring_buffer.o
+ .debug_macro   0x0000000000000000      0x1df bin/ring_buffer.o
+ .debug_macro   0x0000000000000000       0x22 bin/ring_buffer.o
+ .debug_macro   0x0000000000000000       0x66 bin/ring_buffer.o
+ .debug_macro   0x0000000000000000       0x10 bin/ring_buffer.o
+ .debug_line    0x0000000000000000      0x31f bin/ring_buffer.o
+ .debug_str     0x0000000000000000     0x583c bin/ring_buffer.o
+ .comment       0x0000000000000000       0x71 bin/ring_buffer.o
+ .debug_frame   0x0000000000000000       0xb0 bin/ring_buffer.o
+ .ARM.attributes
+                0x0000000000000000       0x31 bin/ring_buffer.o
+ .group         0x0000000000000000        0x8 bin/chip_11xx.o
+ .group         0x0000000000000000        0x8 bin/chip_11xx.o
+ .group         0x0000000000000000        0x8 bin/chip_11xx.o
+ .group         0x0000000000000000        0x8 bin/chip_11xx.o
+ .group         0x0000000000000000        0x8 bin/chip_11xx.o
+ .group         0x0000000000000000        0x8 bin/chip_11xx.o
+ .group         0x0000000000000000        0x8 bin/chip_11xx.o
+ .group         0x0000000000000000        0x8 bin/chip_11xx.o
+ .group         0x0000000000000000        0x8 bin/chip_11xx.o
+ .group         0x0000000000000000        0x8 bin/chip_11xx.o
+ .group         0x0000000000000000        0x8 bin/chip_11xx.o
+ .group         0x0000000000000000        0x8 bin/chip_11xx.o
+ .group         0x0000000000000000        0x8 bin/chip_11xx.o
+ .group         0x0000000000000000        0x8 bin/chip_11xx.o
+ .group         0x0000000000000000        0x8 bin/chip_11xx.o
+ .group         0x0000000000000000        0x8 bin/chip_11xx.o
+ .group         0x0000000000000000        0x8 bin/chip_11xx.o
+ .group         0x0000000000000000        0x8 bin/chip_11xx.o
+ .group         0x0000000000000000        0x8 bin/chip_11xx.o
+ .group         0x0000000000000000        0x8 bin/chip_11xx.o
+ .group         0x0000000000000000        0x8 bin/chip_11xx.o
+ .group         0x0000000000000000        0x8 bin/chip_11xx.o
+ .group         0x0000000000000000        0x8 bin/chip_11xx.o
+ .group         0x0000000000000000        0x8 bin/chip_11xx.o
+ .group         0x0000000000000000        0x8 bin/chip_11xx.o
+ .group         0x0000000000000000        0x8 bin/chip_11xx.o
+ .text          0x0000000000000000        0x0 bin/chip_11xx.o
+ .data          0x0000000000000000        0x0 bin/chip_11xx.o
+ .bss           0x0000000000000000        0x0 bin/chip_11xx.o
+ .debug_macro   0x0000000000000000      0x81a bin/chip_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/chip_11xx.o
+ .debug_macro   0x0000000000000000       0x44 bin/chip_11xx.o
+ .debug_macro   0x0000000000000000       0xe3 bin/chip_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/chip_11xx.o
+ .debug_macro   0x0000000000000000      0x1df bin/chip_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/chip_11xx.o
+ .debug_macro   0x0000000000000000       0x6d bin/chip_11xx.o
+ .debug_macro   0x0000000000000000       0x10 bin/chip_11xx.o
+ .debug_macro   0x0000000000000000       0x1f bin/chip_11xx.o
+ .debug_macro   0x0000000000000000       0x3a bin/chip_11xx.o
+ .debug_macro   0x0000000000000000      0x241 bin/chip_11xx.o
+ .debug_macro   0x0000000000000000      0x11e bin/chip_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/chip_11xx.o
+ .debug_macro   0x0000000000000000       0xb2 bin/chip_11xx.o
+ .debug_macro   0x0000000000000000       0x10 bin/chip_11xx.o
+ .debug_macro   0x0000000000000000      0x137 bin/chip_11xx.o
+ .debug_macro   0x0000000000000000       0x4c bin/chip_11xx.o
+ .debug_macro   0x0000000000000000       0x16 bin/chip_11xx.o
+ .debug_macro   0x0000000000000000      0x31a bin/chip_11xx.o
+ .debug_macro   0x0000000000000000       0x2e bin/chip_11xx.o
+ .debug_macro   0x0000000000000000       0xb8 bin/chip_11xx.o
+ .debug_macro   0x0000000000000000       0x11 bin/chip_11xx.o
+ .debug_macro   0x0000000000000000       0x7c bin/chip_11xx.o
+ .debug_macro   0x0000000000000000      0x21c bin/chip_11xx.o
+ .debug_macro   0x0000000000000000      0x129 bin/chip_11xx.o
+ COMMON         0x0000000000000000        0x0 bin/chip_11xx.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_2.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_2.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_2.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_2.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_2.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_2.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_2.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_2.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_2.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_2.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_2.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_2.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_2.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_2.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_2.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_2.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_2.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_2.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_2.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_2.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_2.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_2.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_2.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_2.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_2.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_2.o
+ .text          0x0000000000000000        0x0 bin/gpio_11xx_2.o
+ .data          0x0000000000000000        0x0 bin/gpio_11xx_2.o
+ .bss           0x0000000000000000        0x0 bin/gpio_11xx_2.o
+ .text.Chip_GPIO_DeInit
+                0x0000000000000000       0x14 bin/gpio_11xx_2.o
+ .text.Chip_GPIO_SetDir
+                0x0000000000000000       0x1c bin/gpio_11xx_2.o
+ .text.Chip_GPIO_SetPinDIR
+                0x0000000000000000       0x28 bin/gpio_11xx_2.o
+ .text.Chip_GPIO_SetPortDIR
+                0x0000000000000000       0x1c bin/gpio_11xx_2.o
+ .text.Chip_GPIO_SetupPinInt
+                0x0000000000000000       0x60 bin/gpio_11xx_2.o
+ .debug_macro   0x0000000000000000      0x81a bin/gpio_11xx_2.o
+ .debug_macro   0x0000000000000000       0x22 bin/gpio_11xx_2.o
+ .debug_macro   0x0000000000000000       0x44 bin/gpio_11xx_2.o
+ .debug_macro   0x0000000000000000       0xe3 bin/gpio_11xx_2.o
+ .debug_macro   0x0000000000000000       0x22 bin/gpio_11xx_2.o
+ .debug_macro   0x0000000000000000      0x1df bin/gpio_11xx_2.o
+ .debug_macro   0x0000000000000000       0x22 bin/gpio_11xx_2.o
+ .debug_macro   0x0000000000000000       0x6d bin/gpio_11xx_2.o
+ .debug_macro   0x0000000000000000       0x10 bin/gpio_11xx_2.o
+ .debug_macro   0x0000000000000000       0x1f bin/gpio_11xx_2.o
+ .debug_macro   0x0000000000000000       0x3a bin/gpio_11xx_2.o
+ .debug_macro   0x0000000000000000      0x241 bin/gpio_11xx_2.o
+ .debug_macro   0x0000000000000000      0x11e bin/gpio_11xx_2.o
+ .debug_macro   0x0000000000000000       0x22 bin/gpio_11xx_2.o
+ .debug_macro   0x0000000000000000       0xb2 bin/gpio_11xx_2.o
+ .debug_macro   0x0000000000000000       0x10 bin/gpio_11xx_2.o
+ .debug_macro   0x0000000000000000      0x137 bin/gpio_11xx_2.o
+ .debug_macro   0x0000000000000000       0x4c bin/gpio_11xx_2.o
+ .debug_macro   0x0000000000000000       0x16 bin/gpio_11xx_2.o
+ .debug_macro   0x0000000000000000      0x31a bin/gpio_11xx_2.o
+ .debug_macro   0x0000000000000000       0x2e bin/gpio_11xx_2.o
+ .debug_macro   0x0000000000000000       0xb8 bin/gpio_11xx_2.o
+ .debug_macro   0x0000000000000000       0x11 bin/gpio_11xx_2.o
+ .debug_macro   0x0000000000000000       0x7c bin/gpio_11xx_2.o
+ .debug_macro   0x0000000000000000      0x21c bin/gpio_11xx_2.o
+ .debug_macro   0x0000000000000000      0x129 bin/gpio_11xx_2.o
+ .group         0x0000000000000000        0x8 bin/pinint_11xx.o
+ .group         0x0000000000000000        0x8 bin/pinint_11xx.o
+ .group         0x0000000000000000        0x8 bin/pinint_11xx.o
+ .group         0x0000000000000000        0x8 bin/pinint_11xx.o
+ .group         0x0000000000000000        0x8 bin/pinint_11xx.o
+ .group         0x0000000000000000        0x8 bin/pinint_11xx.o
+ .group         0x0000000000000000        0x8 bin/pinint_11xx.o
+ .group         0x0000000000000000        0x8 bin/pinint_11xx.o
+ .group         0x0000000000000000        0x8 bin/pinint_11xx.o
+ .group         0x0000000000000000        0x8 bin/pinint_11xx.o
+ .group         0x0000000000000000        0x8 bin/pinint_11xx.o
+ .group         0x0000000000000000        0x8 bin/pinint_11xx.o
+ .group         0x0000000000000000        0x8 bin/pinint_11xx.o
+ .group         0x0000000000000000        0x8 bin/pinint_11xx.o
+ .group         0x0000000000000000        0x8 bin/pinint_11xx.o
+ .group         0x0000000000000000        0x8 bin/pinint_11xx.o
+ .group         0x0000000000000000        0x8 bin/pinint_11xx.o
+ .group         0x0000000000000000        0x8 bin/pinint_11xx.o
+ .group         0x0000000000000000        0x8 bin/pinint_11xx.o
+ .group         0x0000000000000000        0x8 bin/pinint_11xx.o
+ .group         0x0000000000000000        0x8 bin/pinint_11xx.o
+ .group         0x0000000000000000        0x8 bin/pinint_11xx.o
+ .group         0x0000000000000000        0x8 bin/pinint_11xx.o
+ .group         0x0000000000000000        0x8 bin/pinint_11xx.o
+ .group         0x0000000000000000        0x8 bin/pinint_11xx.o
+ .group         0x0000000000000000        0x8 bin/pinint_11xx.o
+ .text          0x0000000000000000        0x0 bin/pinint_11xx.o
+ .data          0x0000000000000000        0x0 bin/pinint_11xx.o
+ .bss           0x0000000000000000        0x0 bin/pinint_11xx.o
+ .debug_info    0x0000000000000000       0xa3 bin/pinint_11xx.o
+ .debug_abbrev  0x0000000000000000       0x4e bin/pinint_11xx.o
+ .debug_aranges
+                0x0000000000000000       0x18 bin/pinint_11xx.o
+ .debug_macro   0x0000000000000000      0x160 bin/pinint_11xx.o
+ .debug_macro   0x0000000000000000      0x81a bin/pinint_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/pinint_11xx.o
+ .debug_macro   0x0000000000000000       0x44 bin/pinint_11xx.o
+ .debug_macro   0x0000000000000000       0xe3 bin/pinint_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/pinint_11xx.o
+ .debug_macro   0x0000000000000000      0x1df bin/pinint_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/pinint_11xx.o
+ .debug_macro   0x0000000000000000       0x6d bin/pinint_11xx.o
+ .debug_macro   0x0000000000000000       0x10 bin/pinint_11xx.o
+ .debug_macro   0x0000000000000000       0x1f bin/pinint_11xx.o
+ .debug_macro   0x0000000000000000       0x3a bin/pinint_11xx.o
+ .debug_macro   0x0000000000000000      0x241 bin/pinint_11xx.o
+ .debug_macro   0x0000000000000000      0x11e bin/pinint_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/pinint_11xx.o
+ .debug_macro   0x0000000000000000       0xb2 bin/pinint_11xx.o
+ .debug_macro   0x0000000000000000       0x10 bin/pinint_11xx.o
+ .debug_macro   0x0000000000000000      0x137 bin/pinint_11xx.o
+ .debug_macro   0x0000000000000000       0x4c bin/pinint_11xx.o
+ .debug_macro   0x0000000000000000       0x16 bin/pinint_11xx.o
+ .debug_macro   0x0000000000000000      0x31a bin/pinint_11xx.o
+ .debug_macro   0x0000000000000000       0x2e bin/pinint_11xx.o
+ .debug_macro   0x0000000000000000       0xb8 bin/pinint_11xx.o
+ .debug_macro   0x0000000000000000       0x11 bin/pinint_11xx.o
+ .debug_macro   0x0000000000000000       0x7c bin/pinint_11xx.o
+ .debug_macro   0x0000000000000000      0x21c bin/pinint_11xx.o
+ .debug_macro   0x0000000000000000      0x129 bin/pinint_11xx.o
+ .debug_line    0x0000000000000000      0x2b8 bin/pinint_11xx.o
+ .debug_str     0x0000000000000000     0x7202 bin/pinint_11xx.o
+ .comment       0x0000000000000000       0x71 bin/pinint_11xx.o
+ .ARM.attributes
+                0x0000000000000000       0x31 bin/pinint_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysinit_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysinit_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysinit_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysinit_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysinit_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysinit_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysinit_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysinit_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysinit_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysinit_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysinit_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysinit_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysinit_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysinit_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysinit_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysinit_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysinit_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysinit_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysinit_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysinit_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysinit_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysinit_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysinit_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysinit_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysinit_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysinit_11xx.o
+ .text          0x0000000000000000        0x0 bin/sysinit_11xx.o
+ .data          0x0000000000000000        0x0 bin/sysinit_11xx.o
+ .bss           0x0000000000000000        0x0 bin/sysinit_11xx.o
+ .text.Chip_SystemInit
+                0x0000000000000000       0x60 bin/sysinit_11xx.o
+ .debug_info    0x0000000000000000      0x906 bin/sysinit_11xx.o
+ .debug_abbrev  0x0000000000000000      0x1fe bin/sysinit_11xx.o
+ .debug_loc     0x0000000000000000       0x18 bin/sysinit_11xx.o
+ .debug_aranges
+                0x0000000000000000       0x20 bin/sysinit_11xx.o
+ .debug_ranges  0x0000000000000000       0x60 bin/sysinit_11xx.o
+ .debug_macro   0x0000000000000000      0x160 bin/sysinit_11xx.o
+ .debug_macro   0x0000000000000000      0x81a bin/sysinit_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/sysinit_11xx.o
+ .debug_macro   0x0000000000000000       0x44 bin/sysinit_11xx.o
+ .debug_macro   0x0000000000000000       0xe3 bin/sysinit_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/sysinit_11xx.o
+ .debug_macro   0x0000000000000000      0x1df bin/sysinit_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/sysinit_11xx.o
+ .debug_macro   0x0000000000000000       0x6d bin/sysinit_11xx.o
+ .debug_macro   0x0000000000000000       0x10 bin/sysinit_11xx.o
+ .debug_macro   0x0000000000000000       0x1f bin/sysinit_11xx.o
+ .debug_macro   0x0000000000000000       0x3a bin/sysinit_11xx.o
+ .debug_macro   0x0000000000000000      0x241 bin/sysinit_11xx.o
+ .debug_macro   0x0000000000000000      0x11e bin/sysinit_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/sysinit_11xx.o
+ .debug_macro   0x0000000000000000       0xb2 bin/sysinit_11xx.o
+ .debug_macro   0x0000000000000000       0x10 bin/sysinit_11xx.o
+ .debug_macro   0x0000000000000000      0x137 bin/sysinit_11xx.o
+ .debug_macro   0x0000000000000000       0x4c bin/sysinit_11xx.o
+ .debug_macro   0x0000000000000000       0x16 bin/sysinit_11xx.o
+ .debug_macro   0x0000000000000000      0x31a bin/sysinit_11xx.o
+ .debug_macro   0x0000000000000000       0x2e bin/sysinit_11xx.o
+ .debug_macro   0x0000000000000000       0xb8 bin/sysinit_11xx.o
+ .debug_macro   0x0000000000000000       0x11 bin/sysinit_11xx.o
+ .debug_macro   0x0000000000000000       0x7c bin/sysinit_11xx.o
+ .debug_macro   0x0000000000000000      0x21c bin/sysinit_11xx.o
+ .debug_macro   0x0000000000000000      0x129 bin/sysinit_11xx.o
+ .debug_line    0x0000000000000000      0x31f bin/sysinit_11xx.o
+ .debug_str     0x0000000000000000     0x792e bin/sysinit_11xx.o
+ .comment       0x0000000000000000       0x71 bin/sysinit_11xx.o
+ .debug_frame   0x0000000000000000       0x2c bin/sysinit_11xx.o
+ .ARM.attributes
+                0x0000000000000000       0x31 bin/sysinit_11xx.o
+ .group         0x0000000000000000        0x8 bin/iocon_11xx.o
+ .group         0x0000000000000000        0x8 bin/iocon_11xx.o
+ .group         0x0000000000000000        0x8 bin/iocon_11xx.o
+ .group         0x0000000000000000        0x8 bin/iocon_11xx.o
+ .group         0x0000000000000000        0x8 bin/iocon_11xx.o
+ .group         0x0000000000000000        0x8 bin/iocon_11xx.o
+ .group         0x0000000000000000        0x8 bin/iocon_11xx.o
+ .group         0x0000000000000000        0x8 bin/iocon_11xx.o
+ .group         0x0000000000000000        0x8 bin/iocon_11xx.o
+ .group         0x0000000000000000        0x8 bin/iocon_11xx.o
+ .group         0x0000000000000000        0x8 bin/iocon_11xx.o
+ .group         0x0000000000000000        0x8 bin/iocon_11xx.o
+ .group         0x0000000000000000        0x8 bin/iocon_11xx.o
+ .group         0x0000000000000000        0x8 bin/iocon_11xx.o
+ .group         0x0000000000000000        0x8 bin/iocon_11xx.o
+ .group         0x0000000000000000        0x8 bin/iocon_11xx.o
+ .group         0x0000000000000000        0x8 bin/iocon_11xx.o
+ .group         0x0000000000000000        0x8 bin/iocon_11xx.o
+ .group         0x0000000000000000        0x8 bin/iocon_11xx.o
+ .group         0x0000000000000000        0x8 bin/iocon_11xx.o
+ .group         0x0000000000000000        0x8 bin/iocon_11xx.o
+ .group         0x0000000000000000        0x8 bin/iocon_11xx.o
+ .group         0x0000000000000000        0x8 bin/iocon_11xx.o
+ .group         0x0000000000000000        0x8 bin/iocon_11xx.o
+ .group         0x0000000000000000        0x8 bin/iocon_11xx.o
+ .group         0x0000000000000000        0x8 bin/iocon_11xx.o
+ .text          0x0000000000000000        0x0 bin/iocon_11xx.o
+ .data          0x0000000000000000        0x0 bin/iocon_11xx.o
+ .bss           0x0000000000000000        0x0 bin/iocon_11xx.o
+ .debug_info    0x0000000000000000       0xa3 bin/iocon_11xx.o
+ .debug_abbrev  0x0000000000000000       0x4e bin/iocon_11xx.o
+ .debug_aranges
+                0x0000000000000000       0x18 bin/iocon_11xx.o
+ .debug_macro   0x0000000000000000      0x160 bin/iocon_11xx.o
+ .debug_macro   0x0000000000000000      0x81a bin/iocon_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/iocon_11xx.o
+ .debug_macro   0x0000000000000000       0x44 bin/iocon_11xx.o
+ .debug_macro   0x0000000000000000       0xe3 bin/iocon_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/iocon_11xx.o
+ .debug_macro   0x0000000000000000      0x1df bin/iocon_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/iocon_11xx.o
+ .debug_macro   0x0000000000000000       0x6d bin/iocon_11xx.o
+ .debug_macro   0x0000000000000000       0x10 bin/iocon_11xx.o
+ .debug_macro   0x0000000000000000       0x1f bin/iocon_11xx.o
+ .debug_macro   0x0000000000000000       0x3a bin/iocon_11xx.o
+ .debug_macro   0x0000000000000000      0x241 bin/iocon_11xx.o
+ .debug_macro   0x0000000000000000      0x11e bin/iocon_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/iocon_11xx.o
+ .debug_macro   0x0000000000000000       0xb2 bin/iocon_11xx.o
+ .debug_macro   0x0000000000000000       0x10 bin/iocon_11xx.o
+ .debug_macro   0x0000000000000000      0x137 bin/iocon_11xx.o
+ .debug_macro   0x0000000000000000       0x4c bin/iocon_11xx.o
+ .debug_macro   0x0000000000000000       0x16 bin/iocon_11xx.o
+ .debug_macro   0x0000000000000000      0x31a bin/iocon_11xx.o
+ .debug_macro   0x0000000000000000       0x2e bin/iocon_11xx.o
+ .debug_macro   0x0000000000000000       0xb8 bin/iocon_11xx.o
+ .debug_macro   0x0000000000000000       0x11 bin/iocon_11xx.o
+ .debug_macro   0x0000000000000000       0x7c bin/iocon_11xx.o
+ .debug_macro   0x0000000000000000      0x21c bin/iocon_11xx.o
+ .debug_macro   0x0000000000000000      0x129 bin/iocon_11xx.o
+ .debug_line    0x0000000000000000      0x2b7 bin/iocon_11xx.o
+ .debug_str     0x0000000000000000     0x7201 bin/iocon_11xx.o
+ .comment       0x0000000000000000       0x71 bin/iocon_11xx.o
+ .ARM.attributes
+                0x0000000000000000       0x31 bin/iocon_11xx.o
+ .group         0x0000000000000000        0x8 bin/timer_11xx.o
+ .group         0x0000000000000000        0x8 bin/timer_11xx.o
+ .group         0x0000000000000000        0x8 bin/timer_11xx.o
+ .group         0x0000000000000000        0x8 bin/timer_11xx.o
+ .group         0x0000000000000000        0x8 bin/timer_11xx.o
+ .group         0x0000000000000000        0x8 bin/timer_11xx.o
+ .group         0x0000000000000000        0x8 bin/timer_11xx.o
+ .group         0x0000000000000000        0x8 bin/timer_11xx.o
+ .group         0x0000000000000000        0x8 bin/timer_11xx.o
+ .group         0x0000000000000000        0x8 bin/timer_11xx.o
+ .group         0x0000000000000000        0x8 bin/timer_11xx.o
+ .group         0x0000000000000000        0x8 bin/timer_11xx.o
+ .group         0x0000000000000000        0x8 bin/timer_11xx.o
+ .group         0x0000000000000000        0x8 bin/timer_11xx.o
+ .group         0x0000000000000000        0x8 bin/timer_11xx.o
+ .group         0x0000000000000000        0x8 bin/timer_11xx.o
+ .group         0x0000000000000000        0x8 bin/timer_11xx.o
+ .group         0x0000000000000000        0x8 bin/timer_11xx.o
+ .group         0x0000000000000000        0x8 bin/timer_11xx.o
+ .group         0x0000000000000000        0x8 bin/timer_11xx.o
+ .group         0x0000000000000000        0x8 bin/timer_11xx.o
+ .group         0x0000000000000000        0x8 bin/timer_11xx.o
+ .group         0x0000000000000000        0x8 bin/timer_11xx.o
+ .group         0x0000000000000000        0x8 bin/timer_11xx.o
+ .group         0x0000000000000000        0x8 bin/timer_11xx.o
+ .group         0x0000000000000000        0x8 bin/timer_11xx.o
+ .text          0x0000000000000000        0x0 bin/timer_11xx.o
+ .data          0x0000000000000000        0x0 bin/timer_11xx.o
+ .bss           0x0000000000000000        0x0 bin/timer_11xx.o
+ .text.Chip_TIMER_Init
+                0x0000000000000000       0x44 bin/timer_11xx.o
+ .text.Chip_TIMER_DeInit
+                0x0000000000000000       0x4c bin/timer_11xx.o
+ .text.Chip_TIMER_Reset
+                0x0000000000000000       0x18 bin/timer_11xx.o
+ .text.Chip_TIMER_ExtMatchControlSet
+                0x0000000000000000       0x28 bin/timer_11xx.o
+ .debug_info    0x0000000000000000      0x844 bin/timer_11xx.o
+ .debug_abbrev  0x0000000000000000      0x1dd bin/timer_11xx.o
+ .debug_loc     0x0000000000000000      0x14a bin/timer_11xx.o
+ .debug_aranges
+                0x0000000000000000       0x38 bin/timer_11xx.o
+ .debug_ranges  0x0000000000000000       0x88 bin/timer_11xx.o
+ .debug_macro   0x0000000000000000      0x160 bin/timer_11xx.o
+ .debug_macro   0x0000000000000000      0x81a bin/timer_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/timer_11xx.o
+ .debug_macro   0x0000000000000000       0x44 bin/timer_11xx.o
+ .debug_macro   0x0000000000000000       0xe3 bin/timer_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/timer_11xx.o
+ .debug_macro   0x0000000000000000      0x1df bin/timer_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/timer_11xx.o
+ .debug_macro   0x0000000000000000       0x6d bin/timer_11xx.o
+ .debug_macro   0x0000000000000000       0x10 bin/timer_11xx.o
+ .debug_macro   0x0000000000000000       0x1f bin/timer_11xx.o
+ .debug_macro   0x0000000000000000       0x3a bin/timer_11xx.o
+ .debug_macro   0x0000000000000000      0x241 bin/timer_11xx.o
+ .debug_macro   0x0000000000000000      0x11e bin/timer_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/timer_11xx.o
+ .debug_macro   0x0000000000000000       0xb2 bin/timer_11xx.o
+ .debug_macro   0x0000000000000000       0x10 bin/timer_11xx.o
+ .debug_macro   0x0000000000000000      0x137 bin/timer_11xx.o
+ .debug_macro   0x0000000000000000       0x4c bin/timer_11xx.o
+ .debug_macro   0x0000000000000000       0x16 bin/timer_11xx.o
+ .debug_macro   0x0000000000000000      0x31a bin/timer_11xx.o
+ .debug_macro   0x0000000000000000       0x2e bin/timer_11xx.o
+ .debug_macro   0x0000000000000000       0xb8 bin/timer_11xx.o
+ .debug_macro   0x0000000000000000       0x11 bin/timer_11xx.o
+ .debug_macro   0x0000000000000000       0x7c bin/timer_11xx.o
+ .debug_macro   0x0000000000000000      0x21c bin/timer_11xx.o
+ .debug_macro   0x0000000000000000      0x129 bin/timer_11xx.o
+ .debug_line    0x0000000000000000      0x34e bin/timer_11xx.o
+ .debug_str     0x0000000000000000     0x77c4 bin/timer_11xx.o
+ .comment       0x0000000000000000       0x71 bin/timer_11xx.o
+ .debug_frame   0x0000000000000000       0x64 bin/timer_11xx.o
+ .ARM.attributes
+                0x0000000000000000       0x31 bin/timer_11xx.o
+ .group         0x0000000000000000        0x8 bin/adc_11xx.o
+ .group         0x0000000000000000        0x8 bin/adc_11xx.o
+ .group         0x0000000000000000        0x8 bin/adc_11xx.o
+ .group         0x0000000000000000        0x8 bin/adc_11xx.o
+ .group         0x0000000000000000        0x8 bin/adc_11xx.o
+ .group         0x0000000000000000        0x8 bin/adc_11xx.o
+ .group         0x0000000000000000        0x8 bin/adc_11xx.o
+ .group         0x0000000000000000        0x8 bin/adc_11xx.o
+ .group         0x0000000000000000        0x8 bin/adc_11xx.o
+ .group         0x0000000000000000        0x8 bin/adc_11xx.o
+ .group         0x0000000000000000        0x8 bin/adc_11xx.o
+ .group         0x0000000000000000        0x8 bin/adc_11xx.o
+ .group         0x0000000000000000        0x8 bin/adc_11xx.o
+ .group         0x0000000000000000        0x8 bin/adc_11xx.o
+ .group         0x0000000000000000        0x8 bin/adc_11xx.o
+ .group         0x0000000000000000        0x8 bin/adc_11xx.o
+ .group         0x0000000000000000        0x8 bin/adc_11xx.o
+ .group         0x0000000000000000        0x8 bin/adc_11xx.o
+ .group         0x0000000000000000        0x8 bin/adc_11xx.o
+ .group         0x0000000000000000        0x8 bin/adc_11xx.o
+ .group         0x0000000000000000        0x8 bin/adc_11xx.o
+ .group         0x0000000000000000        0x8 bin/adc_11xx.o
+ .group         0x0000000000000000        0x8 bin/adc_11xx.o
+ .group         0x0000000000000000        0x8 bin/adc_11xx.o
+ .group         0x0000000000000000        0x8 bin/adc_11xx.o
+ .group         0x0000000000000000        0x8 bin/adc_11xx.o
+ .text          0x0000000000000000        0x0 bin/adc_11xx.o
+ .data          0x0000000000000000        0x0 bin/adc_11xx.o
+ .bss           0x0000000000000000        0x0 bin/adc_11xx.o
+ .text.setStartMode
+                0x0000000000000000       0x14 bin/adc_11xx.o
+ .text.readAdcVal
+                0x0000000000000000       0x18 bin/adc_11xx.o
+ .text.Chip_ADC_Init
+                0x0000000000000000       0x64 bin/adc_11xx.o
+ .text.Chip_ADC_DeInit
+                0x0000000000000000       0x28 bin/adc_11xx.o
+ .text.Chip_ADC_ReadValue
+                0x0000000000000000       0x18 bin/adc_11xx.o
+ .text.Chip_ADC_ReadStatus
+                0x0000000000000000       0x34 bin/adc_11xx.o
+ .text.Chip_ADC_Int_SetChannelCmd
+                0x0000000000000000       0x18 bin/adc_11xx.o
+ .text.Chip_ADC_SetStartMode
+                0x0000000000000000       0x34 bin/adc_11xx.o
+ .text.Chip_ADC_SetSampleRate
+                0x0000000000000000       0x68 bin/adc_11xx.o
+ .text.Chip_ADC_SetResolution
+                0x0000000000000000        0xc bin/adc_11xx.o
+ .text.Chip_ADC_EnableChannel
+                0x0000000000000000       0x28 bin/adc_11xx.o
+ .text.Chip_ADC_SetBurstCmd
+                0x0000000000000000       0x2c bin/adc_11xx.o
+ .text.Chip_ADC_ReadByte
+                0x0000000000000000       0x1c bin/adc_11xx.o
+ .debug_info    0x0000000000000000      0xe35 bin/adc_11xx.o
+ .debug_abbrev  0x0000000000000000      0x309 bin/adc_11xx.o
+ .debug_loc     0x0000000000000000      0x782 bin/adc_11xx.o
+ .debug_aranges
+                0x0000000000000000       0x80 bin/adc_11xx.o
+ .debug_ranges  0x0000000000000000      0x100 bin/adc_11xx.o
+ .debug_macro   0x0000000000000000      0x160 bin/adc_11xx.o
+ .debug_macro   0x0000000000000000      0x81a bin/adc_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/adc_11xx.o
+ .debug_macro   0x0000000000000000       0x44 bin/adc_11xx.o
+ .debug_macro   0x0000000000000000       0xe3 bin/adc_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/adc_11xx.o
+ .debug_macro   0x0000000000000000      0x1df bin/adc_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/adc_11xx.o
+ .debug_macro   0x0000000000000000       0x6d bin/adc_11xx.o
+ .debug_macro   0x0000000000000000       0x10 bin/adc_11xx.o
+ .debug_macro   0x0000000000000000       0x1f bin/adc_11xx.o
+ .debug_macro   0x0000000000000000       0x3a bin/adc_11xx.o
+ .debug_macro   0x0000000000000000      0x241 bin/adc_11xx.o
+ .debug_macro   0x0000000000000000      0x11e bin/adc_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/adc_11xx.o
+ .debug_macro   0x0000000000000000       0xb2 bin/adc_11xx.o
+ .debug_macro   0x0000000000000000       0x10 bin/adc_11xx.o
+ .debug_macro   0x0000000000000000      0x137 bin/adc_11xx.o
+ .debug_macro   0x0000000000000000       0x4c bin/adc_11xx.o
+ .debug_macro   0x0000000000000000       0x16 bin/adc_11xx.o
+ .debug_macro   0x0000000000000000      0x31a bin/adc_11xx.o
+ .debug_macro   0x0000000000000000       0x2e bin/adc_11xx.o
+ .debug_macro   0x0000000000000000       0xb8 bin/adc_11xx.o
+ .debug_macro   0x0000000000000000       0x11 bin/adc_11xx.o
+ .debug_macro   0x0000000000000000       0x7c bin/adc_11xx.o
+ .debug_macro   0x0000000000000000      0x21c bin/adc_11xx.o
+ .debug_macro   0x0000000000000000      0x129 bin/adc_11xx.o
+ .debug_line    0x0000000000000000      0x46c bin/adc_11xx.o
+ .debug_str     0x0000000000000000     0x7b16 bin/adc_11xx.o
+ .comment       0x0000000000000000       0x71 bin/adc_11xx.o
+ .debug_frame   0x0000000000000000      0x128 bin/adc_11xx.o
+ .ARM.attributes
+                0x0000000000000000       0x31 bin/adc_11xx.o
+ .group         0x0000000000000000        0x8 bin/gpiogroup_11xx.o
+ .group         0x0000000000000000        0x8 bin/gpiogroup_11xx.o
+ .group         0x0000000000000000        0x8 bin/gpiogroup_11xx.o
+ .group         0x0000000000000000        0x8 bin/gpiogroup_11xx.o
+ .group         0x0000000000000000        0x8 bin/gpiogroup_11xx.o
+ .group         0x0000000000000000        0x8 bin/gpiogroup_11xx.o
+ .group         0x0000000000000000        0x8 bin/gpiogroup_11xx.o
+ .group         0x0000000000000000        0x8 bin/gpiogroup_11xx.o
+ .group         0x0000000000000000        0x8 bin/gpiogroup_11xx.o
+ .group         0x0000000000000000        0x8 bin/gpiogroup_11xx.o
+ .group         0x0000000000000000        0x8 bin/gpiogroup_11xx.o
+ .group         0x0000000000000000        0x8 bin/gpiogroup_11xx.o
+ .group         0x0000000000000000        0x8 bin/gpiogroup_11xx.o
+ .group         0x0000000000000000        0x8 bin/gpiogroup_11xx.o
+ .group         0x0000000000000000        0x8 bin/gpiogroup_11xx.o
+ .group         0x0000000000000000        0x8 bin/gpiogroup_11xx.o
+ .group         0x0000000000000000        0x8 bin/gpiogroup_11xx.o
+ .group         0x0000000000000000        0x8 bin/gpiogroup_11xx.o
+ .group         0x0000000000000000        0x8 bin/gpiogroup_11xx.o
+ .group         0x0000000000000000        0x8 bin/gpiogroup_11xx.o
+ .group         0x0000000000000000        0x8 bin/gpiogroup_11xx.o
+ .group         0x0000000000000000        0x8 bin/gpiogroup_11xx.o
+ .group         0x0000000000000000        0x8 bin/gpiogroup_11xx.o
+ .group         0x0000000000000000        0x8 bin/gpiogroup_11xx.o
+ .group         0x0000000000000000        0x8 bin/gpiogroup_11xx.o
+ .group         0x0000000000000000        0x8 bin/gpiogroup_11xx.o
+ .text          0x0000000000000000        0x0 bin/gpiogroup_11xx.o
+ .data          0x0000000000000000        0x0 bin/gpiogroup_11xx.o
+ .bss           0x0000000000000000        0x0 bin/gpiogroup_11xx.o
+ .debug_info    0x0000000000000000       0xa3 bin/gpiogroup_11xx.o
+ .debug_abbrev  0x0000000000000000       0x4e bin/gpiogroup_11xx.o
+ .debug_aranges
+                0x0000000000000000       0x18 bin/gpiogroup_11xx.o
+ .debug_macro   0x0000000000000000      0x160 bin/gpiogroup_11xx.o
+ .debug_macro   0x0000000000000000      0x81a bin/gpiogroup_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/gpiogroup_11xx.o
+ .debug_macro   0x0000000000000000       0x44 bin/gpiogroup_11xx.o
+ .debug_macro   0x0000000000000000       0xe3 bin/gpiogroup_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/gpiogroup_11xx.o
+ .debug_macro   0x0000000000000000      0x1df bin/gpiogroup_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/gpiogroup_11xx.o
+ .debug_macro   0x0000000000000000       0x6d bin/gpiogroup_11xx.o
+ .debug_macro   0x0000000000000000       0x10 bin/gpiogroup_11xx.o
+ .debug_macro   0x0000000000000000       0x1f bin/gpiogroup_11xx.o
+ .debug_macro   0x0000000000000000       0x3a bin/gpiogroup_11xx.o
+ .debug_macro   0x0000000000000000      0x241 bin/gpiogroup_11xx.o
+ .debug_macro   0x0000000000000000      0x11e bin/gpiogroup_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/gpiogroup_11xx.o
+ .debug_macro   0x0000000000000000       0xb2 bin/gpiogroup_11xx.o
+ .debug_macro   0x0000000000000000       0x10 bin/gpiogroup_11xx.o
+ .debug_macro   0x0000000000000000      0x137 bin/gpiogroup_11xx.o
+ .debug_macro   0x0000000000000000       0x4c bin/gpiogroup_11xx.o
+ .debug_macro   0x0000000000000000       0x16 bin/gpiogroup_11xx.o
+ .debug_macro   0x0000000000000000      0x31a bin/gpiogroup_11xx.o
+ .debug_macro   0x0000000000000000       0x2e bin/gpiogroup_11xx.o
+ .debug_macro   0x0000000000000000       0xb8 bin/gpiogroup_11xx.o
+ .debug_macro   0x0000000000000000       0x11 bin/gpiogroup_11xx.o
+ .debug_macro   0x0000000000000000       0x7c bin/gpiogroup_11xx.o
+ .debug_macro   0x0000000000000000      0x21c bin/gpiogroup_11xx.o
+ .debug_macro   0x0000000000000000      0x129 bin/gpiogroup_11xx.o
+ .debug_line    0x0000000000000000      0x2bb bin/gpiogroup_11xx.o
+ .debug_str     0x0000000000000000     0x7205 bin/gpiogroup_11xx.o
+ .comment       0x0000000000000000       0x71 bin/gpiogroup_11xx.o
+ .ARM.attributes
+                0x0000000000000000       0x31 bin/gpiogroup_11xx.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_1.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_1.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_1.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_1.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_1.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_1.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_1.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_1.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_1.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_1.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_1.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_1.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_1.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_1.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_1.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_1.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_1.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_1.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_1.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_1.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_1.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_1.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_1.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_1.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_1.o
+ .group         0x0000000000000000        0x8 bin/gpio_11xx_1.o
+ .text          0x0000000000000000        0x0 bin/gpio_11xx_1.o
+ .data          0x0000000000000000        0x0 bin/gpio_11xx_1.o
+ .bss           0x0000000000000000        0x0 bin/gpio_11xx_1.o
+ .debug_info    0x0000000000000000       0xa3 bin/gpio_11xx_1.o
+ .debug_abbrev  0x0000000000000000       0x4e bin/gpio_11xx_1.o
+ .debug_aranges
+                0x0000000000000000       0x18 bin/gpio_11xx_1.o
+ .debug_macro   0x0000000000000000      0x160 bin/gpio_11xx_1.o
+ .debug_macro   0x0000000000000000      0x81a bin/gpio_11xx_1.o
+ .debug_macro   0x0000000000000000       0x22 bin/gpio_11xx_1.o
+ .debug_macro   0x0000000000000000       0x44 bin/gpio_11xx_1.o
+ .debug_macro   0x0000000000000000       0xe3 bin/gpio_11xx_1.o
+ .debug_macro   0x0000000000000000       0x22 bin/gpio_11xx_1.o
+ .debug_macro   0x0000000000000000      0x1df bin/gpio_11xx_1.o
+ .debug_macro   0x0000000000000000       0x22 bin/gpio_11xx_1.o
+ .debug_macro   0x0000000000000000       0x6d bin/gpio_11xx_1.o
+ .debug_macro   0x0000000000000000       0x10 bin/gpio_11xx_1.o
+ .debug_macro   0x0000000000000000       0x1f bin/gpio_11xx_1.o
+ .debug_macro   0x0000000000000000       0x3a bin/gpio_11xx_1.o
+ .debug_macro   0x0000000000000000      0x241 bin/gpio_11xx_1.o
+ .debug_macro   0x0000000000000000      0x11e bin/gpio_11xx_1.o
+ .debug_macro   0x0000000000000000       0x22 bin/gpio_11xx_1.o
+ .debug_macro   0x0000000000000000       0xb2 bin/gpio_11xx_1.o
+ .debug_macro   0x0000000000000000       0x10 bin/gpio_11xx_1.o
+ .debug_macro   0x0000000000000000      0x137 bin/gpio_11xx_1.o
+ .debug_macro   0x0000000000000000       0x4c bin/gpio_11xx_1.o
+ .debug_macro   0x0000000000000000       0x16 bin/gpio_11xx_1.o
+ .debug_macro   0x0000000000000000      0x31a bin/gpio_11xx_1.o
+ .debug_macro   0x0000000000000000       0x2e bin/gpio_11xx_1.o
+ .debug_macro   0x0000000000000000       0xb8 bin/gpio_11xx_1.o
+ .debug_macro   0x0000000000000000       0x11 bin/gpio_11xx_1.o
+ .debug_macro   0x0000000000000000       0x7c bin/gpio_11xx_1.o
+ .debug_macro   0x0000000000000000      0x21c bin/gpio_11xx_1.o
+ .debug_macro   0x0000000000000000      0x129 bin/gpio_11xx_1.o
+ .debug_line    0x0000000000000000      0x2b8 bin/gpio_11xx_1.o
+ .debug_str     0x0000000000000000     0x7202 bin/gpio_11xx_1.o
+ .comment       0x0000000000000000       0x71 bin/gpio_11xx_1.o
+ .ARM.attributes
+                0x0000000000000000       0x31 bin/gpio_11xx_1.o
+ .group         0x0000000000000000        0x8 bin/pmu_11xx.o
+ .group         0x0000000000000000        0x8 bin/pmu_11xx.o
+ .group         0x0000000000000000        0x8 bin/pmu_11xx.o
+ .group         0x0000000000000000        0x8 bin/pmu_11xx.o
+ .group         0x0000000000000000        0x8 bin/pmu_11xx.o
+ .group         0x0000000000000000        0x8 bin/pmu_11xx.o
+ .group         0x0000000000000000        0x8 bin/pmu_11xx.o
+ .group         0x0000000000000000        0x8 bin/pmu_11xx.o
+ .group         0x0000000000000000        0x8 bin/pmu_11xx.o
+ .group         0x0000000000000000        0x8 bin/pmu_11xx.o
+ .group         0x0000000000000000        0x8 bin/pmu_11xx.o
+ .group         0x0000000000000000        0x8 bin/pmu_11xx.o
+ .group         0x0000000000000000        0x8 bin/pmu_11xx.o
+ .group         0x0000000000000000        0x8 bin/pmu_11xx.o
+ .group         0x0000000000000000        0x8 bin/pmu_11xx.o
+ .group         0x0000000000000000        0x8 bin/pmu_11xx.o
+ .group         0x0000000000000000        0x8 bin/pmu_11xx.o
+ .group         0x0000000000000000        0x8 bin/pmu_11xx.o
+ .group         0x0000000000000000        0x8 bin/pmu_11xx.o
+ .group         0x0000000000000000        0x8 bin/pmu_11xx.o
+ .group         0x0000000000000000        0x8 bin/pmu_11xx.o
+ .group         0x0000000000000000        0x8 bin/pmu_11xx.o
+ .group         0x0000000000000000        0x8 bin/pmu_11xx.o
+ .group         0x0000000000000000        0x8 bin/pmu_11xx.o
+ .group         0x0000000000000000        0x8 bin/pmu_11xx.o
+ .group         0x0000000000000000        0x8 bin/pmu_11xx.o
+ .text          0x0000000000000000        0x0 bin/pmu_11xx.o
+ .data          0x0000000000000000        0x0 bin/pmu_11xx.o
+ .bss           0x0000000000000000        0x0 bin/pmu_11xx.o
+ .text.Chip_PMU_SleepState
+                0x0000000000000000        0x8 bin/pmu_11xx.o
+ .text.Chip_PMU_DeepPowerDownState
+                0x0000000000000000       0x18 bin/pmu_11xx.o
+ .text.Chip_PMU_Sleep
+                0x0000000000000000       0x1c bin/pmu_11xx.o
+ .debug_info    0x0000000000000000      0x297 bin/pmu_11xx.o
+ .debug_abbrev  0x0000000000000000      0x189 bin/pmu_11xx.o
+ .debug_loc     0x0000000000000000       0x34 bin/pmu_11xx.o
+ .debug_aranges
+                0x0000000000000000       0x30 bin/pmu_11xx.o
+ .debug_ranges  0x0000000000000000       0x20 bin/pmu_11xx.o
+ .debug_macro   0x0000000000000000      0x160 bin/pmu_11xx.o
+ .debug_macro   0x0000000000000000      0x81a bin/pmu_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/pmu_11xx.o
+ .debug_macro   0x0000000000000000       0x44 bin/pmu_11xx.o
+ .debug_macro   0x0000000000000000       0xe3 bin/pmu_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/pmu_11xx.o
+ .debug_macro   0x0000000000000000      0x1df bin/pmu_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/pmu_11xx.o
+ .debug_macro   0x0000000000000000       0x6d bin/pmu_11xx.o
+ .debug_macro   0x0000000000000000       0x10 bin/pmu_11xx.o
+ .debug_macro   0x0000000000000000       0x1f bin/pmu_11xx.o
+ .debug_macro   0x0000000000000000       0x3a bin/pmu_11xx.o
+ .debug_macro   0x0000000000000000      0x241 bin/pmu_11xx.o
+ .debug_macro   0x0000000000000000      0x11e bin/pmu_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/pmu_11xx.o
+ .debug_macro   0x0000000000000000       0xb2 bin/pmu_11xx.o
+ .debug_macro   0x0000000000000000       0x10 bin/pmu_11xx.o
+ .debug_macro   0x0000000000000000      0x137 bin/pmu_11xx.o
+ .debug_macro   0x0000000000000000       0x4c bin/pmu_11xx.o
+ .debug_macro   0x0000000000000000       0x16 bin/pmu_11xx.o
+ .debug_macro   0x0000000000000000      0x31a bin/pmu_11xx.o
+ .debug_macro   0x0000000000000000       0x2e bin/pmu_11xx.o
+ .debug_macro   0x0000000000000000       0xb8 bin/pmu_11xx.o
+ .debug_macro   0x0000000000000000       0x11 bin/pmu_11xx.o
+ .debug_macro   0x0000000000000000       0x7c bin/pmu_11xx.o
+ .debug_macro   0x0000000000000000      0x21c bin/pmu_11xx.o
+ .debug_macro   0x0000000000000000      0x129 bin/pmu_11xx.o
+ .debug_line    0x0000000000000000      0x312 bin/pmu_11xx.o
+ .debug_str     0x0000000000000000     0x72e5 bin/pmu_11xx.o
+ .comment       0x0000000000000000       0x71 bin/pmu_11xx.o
+ .debug_frame   0x0000000000000000       0x40 bin/pmu_11xx.o
+ .ARM.attributes
+                0x0000000000000000       0x31 bin/pmu_11xx.o
+ .group         0x0000000000000000        0x8 bin/adc_1125.o
+ .group         0x0000000000000000        0x8 bin/adc_1125.o
+ .group         0x0000000000000000        0x8 bin/adc_1125.o
+ .group         0x0000000000000000        0x8 bin/adc_1125.o
+ .group         0x0000000000000000        0x8 bin/adc_1125.o
+ .group         0x0000000000000000        0x8 bin/adc_1125.o
+ .group         0x0000000000000000        0x8 bin/adc_1125.o
+ .group         0x0000000000000000        0x8 bin/adc_1125.o
+ .group         0x0000000000000000        0x8 bin/adc_1125.o
+ .group         0x0000000000000000        0x8 bin/adc_1125.o
+ .group         0x0000000000000000        0x8 bin/adc_1125.o
+ .group         0x0000000000000000        0x8 bin/adc_1125.o
+ .group         0x0000000000000000        0x8 bin/adc_1125.o
+ .group         0x0000000000000000        0x8 bin/adc_1125.o
+ .group         0x0000000000000000        0x8 bin/adc_1125.o
+ .group         0x0000000000000000        0x8 bin/adc_1125.o
+ .group         0x0000000000000000        0x8 bin/adc_1125.o
+ .group         0x0000000000000000        0x8 bin/adc_1125.o
+ .group         0x0000000000000000        0x8 bin/adc_1125.o
+ .group         0x0000000000000000        0x8 bin/adc_1125.o
+ .group         0x0000000000000000        0x8 bin/adc_1125.o
+ .group         0x0000000000000000        0x8 bin/adc_1125.o
+ .group         0x0000000000000000        0x8 bin/adc_1125.o
+ .group         0x0000000000000000        0x8 bin/adc_1125.o
+ .group         0x0000000000000000        0x8 bin/adc_1125.o
+ .group         0x0000000000000000        0x8 bin/adc_1125.o
+ .text          0x0000000000000000        0x0 bin/adc_1125.o
+ .data          0x0000000000000000        0x0 bin/adc_1125.o
+ .bss           0x0000000000000000        0x0 bin/adc_1125.o
+ .debug_info    0x0000000000000000       0xa3 bin/adc_1125.o
+ .debug_abbrev  0x0000000000000000       0x4e bin/adc_1125.o
+ .debug_aranges
+                0x0000000000000000       0x18 bin/adc_1125.o
+ .debug_macro   0x0000000000000000      0x160 bin/adc_1125.o
+ .debug_macro   0x0000000000000000      0x81a bin/adc_1125.o
+ .debug_macro   0x0000000000000000       0x22 bin/adc_1125.o
+ .debug_macro   0x0000000000000000       0x44 bin/adc_1125.o
+ .debug_macro   0x0000000000000000       0xe3 bin/adc_1125.o
+ .debug_macro   0x0000000000000000       0x22 bin/adc_1125.o
+ .debug_macro   0x0000000000000000      0x1df bin/adc_1125.o
+ .debug_macro   0x0000000000000000       0x22 bin/adc_1125.o
+ .debug_macro   0x0000000000000000       0x6d bin/adc_1125.o
+ .debug_macro   0x0000000000000000       0x10 bin/adc_1125.o
+ .debug_macro   0x0000000000000000       0x1f bin/adc_1125.o
+ .debug_macro   0x0000000000000000       0x3a bin/adc_1125.o
+ .debug_macro   0x0000000000000000      0x241 bin/adc_1125.o
+ .debug_macro   0x0000000000000000      0x11e bin/adc_1125.o
+ .debug_macro   0x0000000000000000       0x22 bin/adc_1125.o
+ .debug_macro   0x0000000000000000       0xb2 bin/adc_1125.o
+ .debug_macro   0x0000000000000000       0x10 bin/adc_1125.o
+ .debug_macro   0x0000000000000000      0x137 bin/adc_1125.o
+ .debug_macro   0x0000000000000000       0x4c bin/adc_1125.o
+ .debug_macro   0x0000000000000000       0x16 bin/adc_1125.o
+ .debug_macro   0x0000000000000000      0x31a bin/adc_1125.o
+ .debug_macro   0x0000000000000000       0x2e bin/adc_1125.o
+ .debug_macro   0x0000000000000000       0xb8 bin/adc_1125.o
+ .debug_macro   0x0000000000000000       0x11 bin/adc_1125.o
+ .debug_macro   0x0000000000000000       0x7c bin/adc_1125.o
+ .debug_macro   0x0000000000000000      0x21c bin/adc_1125.o
+ .debug_macro   0x0000000000000000      0x129 bin/adc_1125.o
+ .debug_line    0x0000000000000000      0x2b5 bin/adc_1125.o
+ .debug_str     0x0000000000000000     0x71ff bin/adc_1125.o
+ .comment       0x0000000000000000       0x71 bin/adc_1125.o
+ .ARM.attributes
+                0x0000000000000000       0x31 bin/adc_1125.o
+ .group         0x0000000000000000        0x8 bin/sysctl_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysctl_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysctl_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysctl_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysctl_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysctl_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysctl_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysctl_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysctl_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysctl_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysctl_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysctl_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysctl_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysctl_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysctl_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysctl_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysctl_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysctl_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysctl_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysctl_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysctl_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysctl_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysctl_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysctl_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysctl_11xx.o
+ .group         0x0000000000000000        0x8 bin/sysctl_11xx.o
+ .text          0x0000000000000000        0x0 bin/sysctl_11xx.o
+ .data          0x0000000000000000        0x0 bin/sysctl_11xx.o
+ .bss           0x0000000000000000        0x0 bin/sysctl_11xx.o
+ .text.Chip_SYSCTL_SetDeepSleepPD
+                0x0000000000000000       0x1c bin/sysctl_11xx.o
+ .text.Chip_SYSCTL_SetWakeup
+                0x0000000000000000       0x18 bin/sysctl_11xx.o
+ .text.Chip_SYSCTL_PowerDown
+                0x0000000000000000       0x1c bin/sysctl_11xx.o
+ .text.Chip_SYSCTL_PowerUp
+                0x0000000000000000       0x20 bin/sysctl_11xx.o
+ .debug_info    0x0000000000000000      0x590 bin/sysctl_11xx.o
+ .debug_abbrev  0x0000000000000000       0xdb bin/sysctl_11xx.o
+ .debug_loc     0x0000000000000000       0xbe bin/sysctl_11xx.o
+ .debug_aranges
+                0x0000000000000000       0x38 bin/sysctl_11xx.o
+ .debug_ranges  0x0000000000000000       0x28 bin/sysctl_11xx.o
+ .debug_macro   0x0000000000000000      0x18a bin/sysctl_11xx.o
+ .debug_macro   0x0000000000000000      0x81a bin/sysctl_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/sysctl_11xx.o
+ .debug_macro   0x0000000000000000       0x44 bin/sysctl_11xx.o
+ .debug_macro   0x0000000000000000       0xe3 bin/sysctl_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/sysctl_11xx.o
+ .debug_macro   0x0000000000000000      0x1df bin/sysctl_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/sysctl_11xx.o
+ .debug_macro   0x0000000000000000       0x6d bin/sysctl_11xx.o
+ .debug_macro   0x0000000000000000       0x10 bin/sysctl_11xx.o
+ .debug_macro   0x0000000000000000       0x1f bin/sysctl_11xx.o
+ .debug_macro   0x0000000000000000       0x3a bin/sysctl_11xx.o
+ .debug_macro   0x0000000000000000      0x241 bin/sysctl_11xx.o
+ .debug_macro   0x0000000000000000      0x11e bin/sysctl_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/sysctl_11xx.o
+ .debug_macro   0x0000000000000000       0xb2 bin/sysctl_11xx.o
+ .debug_macro   0x0000000000000000       0x10 bin/sysctl_11xx.o
+ .debug_macro   0x0000000000000000      0x137 bin/sysctl_11xx.o
+ .debug_macro   0x0000000000000000       0x4c bin/sysctl_11xx.o
+ .debug_macro   0x0000000000000000       0x16 bin/sysctl_11xx.o
+ .debug_macro   0x0000000000000000      0x31a bin/sysctl_11xx.o
+ .debug_macro   0x0000000000000000       0x2e bin/sysctl_11xx.o
+ .debug_macro   0x0000000000000000       0xb8 bin/sysctl_11xx.o
+ .debug_macro   0x0000000000000000       0x11 bin/sysctl_11xx.o
+ .debug_macro   0x0000000000000000       0x7c bin/sysctl_11xx.o
+ .debug_macro   0x0000000000000000      0x21c bin/sysctl_11xx.o
+ .debug_macro   0x0000000000000000      0x129 bin/sysctl_11xx.o
+ .debug_line    0x0000000000000000      0x309 bin/sysctl_11xx.o
+ .debug_str     0x0000000000000000     0x7634 bin/sysctl_11xx.o
+ .comment       0x0000000000000000       0x71 bin/sysctl_11xx.o
+ .debug_frame   0x0000000000000000       0x5c bin/sysctl_11xx.o
+ .ARM.attributes
+                0x0000000000000000       0x31 bin/sysctl_11xx.o
+ .group         0x0000000000000000        0x8 bin/uart_11xx.o
+ .group         0x0000000000000000        0x8 bin/uart_11xx.o
+ .group         0x0000000000000000        0x8 bin/uart_11xx.o
+ .group         0x0000000000000000        0x8 bin/uart_11xx.o
+ .group         0x0000000000000000        0x8 bin/uart_11xx.o
+ .group         0x0000000000000000        0x8 bin/uart_11xx.o
+ .group         0x0000000000000000        0x8 bin/uart_11xx.o
+ .group         0x0000000000000000        0x8 bin/uart_11xx.o
+ .group         0x0000000000000000        0x8 bin/uart_11xx.o
+ .group         0x0000000000000000        0x8 bin/uart_11xx.o
+ .group         0x0000000000000000        0x8 bin/uart_11xx.o
+ .group         0x0000000000000000        0x8 bin/uart_11xx.o
+ .group         0x0000000000000000        0x8 bin/uart_11xx.o
+ .group         0x0000000000000000        0x8 bin/uart_11xx.o
+ .group         0x0000000000000000        0x8 bin/uart_11xx.o
+ .group         0x0000000000000000        0x8 bin/uart_11xx.o
+ .group         0x0000000000000000        0x8 bin/uart_11xx.o
+ .group         0x0000000000000000        0x8 bin/uart_11xx.o
+ .group         0x0000000000000000        0x8 bin/uart_11xx.o
+ .group         0x0000000000000000        0x8 bin/uart_11xx.o
+ .group         0x0000000000000000        0x8 bin/uart_11xx.o
+ .group         0x0000000000000000        0x8 bin/uart_11xx.o
+ .group         0x0000000000000000        0x8 bin/uart_11xx.o
+ .group         0x0000000000000000        0x8 bin/uart_11xx.o
+ .group         0x0000000000000000        0x8 bin/uart_11xx.o
+ .group         0x0000000000000000        0x8 bin/uart_11xx.o
+ .text          0x0000000000000000        0x0 bin/uart_11xx.o
+ .data          0x0000000000000000        0x0 bin/uart_11xx.o
+ .bss           0x0000000000000000        0x0 bin/uart_11xx.o
+ .text.Chip_UART_Init
+                0x0000000000000000       0x28 bin/uart_11xx.o
+ .text.Chip_UART_DeInit
+                0x0000000000000000       0x18 bin/uart_11xx.o
+ .text.Chip_UART_Send
+                0x0000000000000000       0x30 bin/uart_11xx.o
+ .text.Chip_UART_SendBlocking
+                0x0000000000000000       0x2c bin/uart_11xx.o
+ .text.Chip_UART_Read
+                0x0000000000000000       0x30 bin/uart_11xx.o
+ .text.Chip_UART_ReadBlocking
+                0x0000000000000000       0x2c bin/uart_11xx.o
+ .text.Chip_UART_SetBaud
+                0x0000000000000000       0x38 bin/uart_11xx.o
+ .text.Chip_UART_RXIntHandlerRB
+                0x0000000000000000       0x2c bin/uart_11xx.o
+ .text.Chip_UART_TXIntHandlerRB
+                0x0000000000000000       0x30 bin/uart_11xx.o
+ .text.Chip_UART_SendRB
+                0x0000000000000000       0x48 bin/uart_11xx.o
+ .text.Chip_UART_ReadRB
+                0x0000000000000000       0x10 bin/uart_11xx.o
+ .text.Chip_UART_IRQRBHandler
+                0x0000000000000000       0x4c bin/uart_11xx.o
+ .text.Chip_UART_SetBaudFDR
+                0x0000000000000000       0xa0 bin/uart_11xx.o
+ .debug_info    0x0000000000000000     0x13bf bin/uart_11xx.o
+ .debug_abbrev  0x0000000000000000      0x3a1 bin/uart_11xx.o
+ .debug_loc     0x0000000000000000      0xcb3 bin/uart_11xx.o
+ .debug_aranges
+                0x0000000000000000       0x80 bin/uart_11xx.o
+ .debug_ranges  0x0000000000000000      0x298 bin/uart_11xx.o
+ .debug_macro   0x0000000000000000      0x160 bin/uart_11xx.o
+ .debug_macro   0x0000000000000000      0x81a bin/uart_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/uart_11xx.o
+ .debug_macro   0x0000000000000000       0x44 bin/uart_11xx.o
+ .debug_macro   0x0000000000000000       0xe3 bin/uart_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/uart_11xx.o
+ .debug_macro   0x0000000000000000      0x1df bin/uart_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/uart_11xx.o
+ .debug_macro   0x0000000000000000       0x6d bin/uart_11xx.o
+ .debug_macro   0x0000000000000000       0x10 bin/uart_11xx.o
+ .debug_macro   0x0000000000000000       0x1f bin/uart_11xx.o
+ .debug_macro   0x0000000000000000       0x3a bin/uart_11xx.o
+ .debug_macro   0x0000000000000000      0x241 bin/uart_11xx.o
+ .debug_macro   0x0000000000000000      0x11e bin/uart_11xx.o
+ .debug_macro   0x0000000000000000       0x22 bin/uart_11xx.o
+ .debug_macro   0x0000000000000000       0xb2 bin/uart_11xx.o
+ .debug_macro   0x0000000000000000       0x10 bin/uart_11xx.o
+ .debug_macro   0x0000000000000000      0x137 bin/uart_11xx.o
+ .debug_macro   0x0000000000000000       0x4c bin/uart_11xx.o
+ .debug_macro   0x0000000000000000       0x16 bin/uart_11xx.o
+ .debug_macro   0x0000000000000000      0x31a bin/uart_11xx.o
+ .debug_macro   0x0000000000000000       0x2e bin/uart_11xx.o
+ .debug_macro   0x0000000000000000       0xb8 bin/uart_11xx.o
+ .debug_macro   0x0000000000000000       0x11 bin/uart_11xx.o
+ .debug_macro   0x0000000000000000       0x7c bin/uart_11xx.o
+ .debug_macro   0x0000000000000000      0x21c bin/uart_11xx.o
+ .debug_macro   0x0000000000000000      0x129 bin/uart_11xx.o
+ .debug_line    0x0000000000000000      0x611 bin/uart_11xx.o
+ .debug_str     0x0000000000000000     0x7a0e bin/uart_11xx.o
+ .comment       0x0000000000000000       0x71 bin/uart_11xx.o
+ .debug_frame   0x0000000000000000      0x1c8 bin/uart_11xx.o
+ .ARM.attributes
+                0x0000000000000000       0x31 bin/uart_11xx.o
+ .group         0x0000000000000000        0x8 bin/blink.o
+ .group         0x0000000000000000        0x8 bin/blink.o
+ .group         0x0000000000000000        0x8 bin/blink.o
+ .group         0x0000000000000000        0x8 bin/blink.o
+ .group         0x0000000000000000        0x8 bin/blink.o
+ .group         0x0000000000000000        0x8 bin/blink.o
+ .group         0x0000000000000000        0x8 bin/blink.o
+ .group         0x0000000000000000        0x8 bin/blink.o
+ .group         0x0000000000000000        0x8 bin/blink.o
+ .group         0x0000000000000000        0x8 bin/blink.o
+ .group         0x0000000000000000        0x8 bin/blink.o
+ .group         0x0000000000000000        0x8 bin/blink.o
+ .group         0x0000000000000000        0x8 bin/blink.o
+ .group         0x0000000000000000        0x8 bin/blink.o
+ .group         0x0000000000000000        0x8 bin/blink.o
+ .group         0x0000000000000000        0x8 bin/blink.o
+ .group         0x0000000000000000        0x8 bin/blink.o
+ .group         0x0000000000000000        0x8 bin/blink.o
+ .group         0x0000000000000000        0x8 bin/blink.o
+ .group         0x0000000000000000        0x8 bin/blink.o
+ .group         0x0000000000000000        0x8 bin/blink.o
+ .group         0x0000000000000000        0x8 bin/blink.o
+ .group         0x0000000000000000        0x8 bin/blink.o
+ .group         0x0000000000000000        0x8 bin/blink.o
+ .group         0x0000000000000000        0x8 bin/blink.o
+ .group         0x0000000000000000        0x8 bin/blink.o
+ .text          0x0000000000000000        0x0 bin/blink.o
+ .data          0x0000000000000000        0x0 bin/blink.o
+ .bss           0x0000000000000000        0x0 bin/blink.o
+ .debug_macro   0x0000000000000000       0x22 bin/blink.o
+ .debug_macro   0x0000000000000000       0x44 bin/blink.o
+ .debug_macro   0x0000000000000000       0xe3 bin/blink.o
+ .debug_macro   0x0000000000000000       0x22 bin/blink.o
+ .debug_macro   0x0000000000000000      0x1df bin/blink.o
+ .debug_macro   0x0000000000000000       0x22 bin/blink.o
+ .debug_macro   0x0000000000000000       0x6d bin/blink.o
+ .debug_macro   0x0000000000000000       0x10 bin/blink.o
+ .debug_macro   0x0000000000000000       0x1f bin/blink.o
+ .debug_macro   0x0000000000000000       0x3a bin/blink.o
+ .debug_macro   0x0000000000000000      0x241 bin/blink.o
+ .debug_macro   0x0000000000000000      0x11e bin/blink.o
+ .debug_macro   0x0000000000000000       0x22 bin/blink.o
+ .debug_macro   0x0000000000000000       0xb2 bin/blink.o
+ .debug_macro   0x0000000000000000       0x10 bin/blink.o
+ .debug_macro   0x0000000000000000      0x137 bin/blink.o
+ .debug_macro   0x0000000000000000       0x4c bin/blink.o
+ .debug_macro   0x0000000000000000       0x16 bin/blink.o
+ .debug_macro   0x0000000000000000      0x31a bin/blink.o
+ .debug_macro   0x0000000000000000       0x2e bin/blink.o
+ .debug_macro   0x0000000000000000       0xb8 bin/blink.o
+ .debug_macro   0x0000000000000000       0x11 bin/blink.o
+ .debug_macro   0x0000000000000000       0x7c bin/blink.o
+ .debug_macro   0x0000000000000000      0x21c bin/blink.o
+ .debug_macro   0x0000000000000000      0x129 bin/blink.o
+ .group         0x0000000000000000        0x8 bin/sysinit.o
+ .group         0x0000000000000000        0x8 bin/sysinit.o
+ .group         0x0000000000000000        0x8 bin/sysinit.o
+ .group         0x0000000000000000        0x8 bin/sysinit.o
+ .group         0x0000000000000000        0x8 bin/sysinit.o
+ .group         0x0000000000000000        0x8 bin/sysinit.o
+ .group         0x0000000000000000        0x8 bin/sysinit.o
+ .group         0x0000000000000000        0x8 bin/sysinit.o
+ .group         0x0000000000000000        0x8 bin/sysinit.o
+ .group         0x0000000000000000        0x8 bin/sysinit.o
+ .group         0x0000000000000000        0x8 bin/sysinit.o
+ .group         0x0000000000000000        0x8 bin/sysinit.o
+ .group         0x0000000000000000        0x8 bin/sysinit.o
+ .group         0x0000000000000000        0x8 bin/sysinit.o
+ .group         0x0000000000000000        0x8 bin/sysinit.o
+ .group         0x0000000000000000        0x8 bin/sysinit.o
+ .group         0x0000000000000000        0x8 bin/sysinit.o
+ .group         0x0000000000000000        0x8 bin/sysinit.o
+ .group         0x0000000000000000        0x8 bin/sysinit.o
+ .group         0x0000000000000000        0x8 bin/sysinit.o
+ .group         0x0000000000000000        0x8 bin/sysinit.o
+ .group         0x0000000000000000        0x8 bin/sysinit.o
+ .group         0x0000000000000000        0x8 bin/sysinit.o
+ .group         0x0000000000000000        0x8 bin/sysinit.o
+ .group         0x0000000000000000        0x8 bin/sysinit.o
+ .group         0x0000000000000000        0x8 bin/sysinit.o
+ .text          0x0000000000000000        0x0 bin/sysinit.o
+ .data          0x0000000000000000        0x0 bin/sysinit.o
+ .bss           0x0000000000000000        0x0 bin/sysinit.o
+ .debug_macro   0x0000000000000000      0x81a bin/sysinit.o
+ .debug_macro   0x0000000000000000       0x22 bin/sysinit.o
+ .debug_macro   0x0000000000000000       0x44 bin/sysinit.o
+ .debug_macro   0x0000000000000000       0xe3 bin/sysinit.o
+ .debug_macro   0x0000000000000000       0x22 bin/sysinit.o
+ .debug_macro   0x0000000000000000      0x1df bin/sysinit.o
+ .debug_macro   0x0000000000000000       0x22 bin/sysinit.o
+ .debug_macro   0x0000000000000000       0x6d bin/sysinit.o
+ .debug_macro   0x0000000000000000       0x10 bin/sysinit.o
+ .debug_macro   0x0000000000000000       0x1f bin/sysinit.o
+ .debug_macro   0x0000000000000000       0x3a bin/sysinit.o
+ .debug_macro   0x0000000000000000      0x241 bin/sysinit.o
+ .debug_macro   0x0000000000000000      0x11e bin/sysinit.o
+ .debug_macro   0x0000000000000000       0x22 bin/sysinit.o
+ .debug_macro   0x0000000000000000       0xb2 bin/sysinit.o
+ .debug_macro   0x0000000000000000       0x10 bin/sysinit.o
+ .debug_macro   0x0000000000000000      0x137 bin/sysinit.o
+ .debug_macro   0x0000000000000000       0x4c bin/sysinit.o
+ .debug_macro   0x0000000000000000       0x16 bin/sysinit.o
+ .debug_macro   0x0000000000000000      0x31a bin/sysinit.o
+ .debug_macro   0x0000000000000000       0x2e bin/sysinit.o
+ .debug_macro   0x0000000000000000       0xb8 bin/sysinit.o
+ .debug_macro   0x0000000000000000       0x11 bin/sysinit.o
+ .debug_macro   0x0000000000000000       0x7c bin/sysinit.o
+ .debug_macro   0x0000000000000000      0x21c bin/sysinit.o
+ .debug_macro   0x0000000000000000      0x129 bin/sysinit.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_dvmd_tls.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_dvmd_tls.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memcpy.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memcpy.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memcpy.o)
+ .text.memcpy   0x0000000000000000       0x7c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memcpy.o)
+ .debug_info    0x0000000000000000      0x131 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memcpy.o)
+ .debug_abbrev  0x0000000000000000       0xab /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memcpy.o)
+ .debug_loc     0x0000000000000000      0x3b6 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memcpy.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memcpy.o)
+ .debug_ranges  0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memcpy.o)
+ .debug_line    0x0000000000000000      0x114 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memcpy.o)
+ .debug_str     0x0000000000000000      0x1e4 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memcpy.o)
+ .comment       0x0000000000000000       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memcpy.o)
+ .debug_frame   0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memcpy.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x0000000000000000 0x0000000000008000 xr
+RAM              0x0000000010000100 0x0000000000001f00 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD bin/startup_LPC11xx.o
+LOAD bin/ssp_11xx.o
+LOAD bin/i2c_11xx.o
+LOAD bin/wwdt_11xx.o
+LOAD bin/clock_11xx.o
+LOAD bin/ring_buffer.o
+LOAD bin/chip_11xx.o
+LOAD bin/gpio_11xx_2.o
+LOAD bin/pinint_11xx.o
+LOAD bin/sysinit_11xx.o
+LOAD bin/iocon_11xx.o
+LOAD bin/timer_11xx.o
+LOAD bin/adc_11xx.o
+LOAD bin/gpiogroup_11xx.o
+LOAD bin/gpio_11xx_1.o
+LOAD bin/pmu_11xx.o
+LOAD bin/adc_1125.o
+LOAD bin/sysctl_11xx.o
+LOAD bin/uart_11xx.o
+LOAD bin/blink.o
+LOAD bin/sysinit.o
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libstdc++.a
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libm.a
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc.a
+END GROUP
+
+.text           0x0000000000000000      0x4f4
+ *(.isr_vector)
+ .isr_vector    0x0000000000000000       0xd0 bin/startup_LPC11xx.o
+                0x0000000000000000                __isr_vector
+                0x00000000000000c0                Reset_Handler
+ *(.text*)
+ .text          0x00000000000000d0        0xc bin/startup_LPC11xx.o
+                0x00000000000000d0                NMI_Handler
+                0x00000000000000d2                HardFault_Handler
+                0x00000000000000d4                SVC_Handler
+                0x00000000000000d6                PendSV_Handler
+                0x00000000000000da                TIMER16_0_IRQHandler
+                0x00000000000000da                UART_IRQHandler
+                0x00000000000000da                TIMER32_0_IRQHandler
+                0x00000000000000da                TIMER32_1_IRQHandler
+                0x00000000000000da                PIOINT1_IRQHandler
+                0x00000000000000da                CAN_IRQHandler
+                0x00000000000000da                SSP0_IRQHandler
+                0x00000000000000da                TIMER16_1_IRQHandler
+                0x00000000000000da                Default_Handler
+                0x00000000000000da                ADC_IRQHandler
+                0x00000000000000da                SSP1_IRQHandler
+                0x00000000000000da                PIOINT2_IRQHandler
+                0x00000000000000da                BOD_IRQHandler
+                0x00000000000000da                WAKEUP_IRQHandler
+                0x00000000000000da                PIOINT0_IRQHandler
+                0x00000000000000da                I2C_IRQHandler
+                0x00000000000000da                WDT_IRQHandler
+                0x00000000000000da                PIOINT3_IRQHandler
+ .text.Chip_Clock_GetSystemPLLOutClockRate
+                0x00000000000000dc       0x40 bin/clock_11xx.o
+                0x00000000000000dc                Chip_Clock_GetSystemPLLOutClockRate
+ .text.Chip_Clock_GetMainClockRate
+                0x000000000000011c       0x5c bin/clock_11xx.o
+                0x000000000000011c                Chip_Clock_GetMainClockRate
+ .text.Chip_Clock_GetSystemClockRate
+                0x0000000000000178       0x14 bin/clock_11xx.o
+                0x0000000000000178                Chip_Clock_GetSystemClockRate
+ .text.SystemCoreClockUpdate
+                0x000000000000018c       0x10 bin/chip_11xx.o
+                0x000000000000018c                SystemCoreClockUpdate
+ .text.Chip_GPIO_Init
+                0x000000000000019c       0x14 bin/gpio_11xx_2.o
+                0x000000000000019c                Chip_GPIO_Init
+ .text.Chip_GPIO_WriteDirBit
+                0x00000000000001b0       0x28 bin/gpio_11xx_2.o
+                0x00000000000001b0                Chip_GPIO_WriteDirBit
+ .text.SysTick_Handler
+                0x00000000000001d8       0x10 bin/blink.o
+                0x00000000000001d8                SysTick_Handler
+ .text.startup.main
+                0x00000000000001e8      0x114 bin/blink.o
+                0x00000000000001e8                main
+ .text.SystemInit
+                0x00000000000002fc       0x90 bin/sysinit.o
+                0x00000000000002fc                SystemInit
+ .text          0x000000000000038c      0x120 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o)
+                0x000000000000038c                __udivsi3
+                0x000000000000038c                __aeabi_uidiv
+                0x0000000000000498                __aeabi_uidivmod
+ .text          0x00000000000004ac        0x4 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_dvmd_tls.o)
+                0x00000000000004ac                __aeabi_ldiv0
+                0x00000000000004ac                __aeabi_idiv0
+ *(.init)
+ *(.fini)
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+ *(.rodata*)
+ .rodata.wdtOSCRate
+                0x00000000000004b0       0x40 bin/clock_11xx.o
+ .rodata.OscRateIn
+                0x00000000000004f0        0x4 bin/blink.o
+                0x00000000000004f0                OscRateIn
+ *(.eh_frame*)
+
+.glue_7         0x00000000000004f4        0x0
+ .glue_7        0x00000000000004f4        0x0 linker stubs
+
+.glue_7t        0x00000000000004f4        0x0
+ .glue_7t       0x00000000000004f4        0x0 linker stubs
+
+.vfp11_veneer   0x00000000000004f4        0x0
+ .vfp11_veneer  0x00000000000004f4        0x0 linker stubs
+
+.v4_bx          0x00000000000004f4        0x0
+ .v4_bx         0x00000000000004f4        0x0 linker stubs
+
+.iplt           0x00000000000004f4        0x0
+ .iplt          0x00000000000004f4        0x0 bin/startup_LPC11xx.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x00000000000004f4                __exidx_start = .
+
+.ARM.exidx      0x00000000000004f4        0x8
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx.isr_vector
+                0x00000000000004f4        0x8 bin/startup_LPC11xx.o
+                0x00000000000004fc                __exidx_end = .
+                0x00000000000004fc                __etext = .
+
+.rel.dyn        0x00000000000004fc        0x0
+ .rel.iplt      0x00000000000004fc        0x0 bin/startup_LPC11xx.o
+
+.data           0x0000000010000100        0x4 load address 0x00000000000004fc
+                0x0000000010000100                __data_start__ = .
+ *(vtable)
+ *(.data*)
+ .data.SystemCoreClock
+                0x0000000010000100        0x4 bin/sysinit.o
+                0x0000000010000100                SystemCoreClock
+                0x0000000010000104                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end, .)
+                0x0000000010000104                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array)
+                [!provide]                        PROVIDE (__init_array_end, .)
+                0x0000000010000104                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*))
+ *(.fini_array)
+                [!provide]                        PROVIDE (__fini_array_end, .)
+ *(.jcr*)
+                0x0000000010000104                . = ALIGN (0x4)
+                0x0000000010000104                __data_end__ = .
+
+.igot.plt       0x0000000010000104        0x0 load address 0x0000000000000500
+ .igot.plt      0x0000000010000104        0x0 bin/startup_LPC11xx.o
+
+.bss            0x0000000010000104        0x4 load address 0x0000000000000500
+                0x0000000010000104                . = ALIGN (0x4)
+                0x0000000010000104                __bss_start__ = .
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x0000000010000104        0x4 bin/blink.o
+                0x0000000010000104                msTicks
+                0x0000000010000108                . = ALIGN (0x4)
+                0x0000000010000108                __bss_end__ = .
+
+.heap           0x0000000010000108     0x1000
+                0x0000000010000108                __end__ = .
+                [!provide]                        PROVIDE (end, .)
+ *(.heap*)
+ .heap          0x0000000010000108     0x1000 bin/startup_LPC11xx.o
+                0x0000000010000108                __HeapBase
+                0x0000000010001108                __HeapLimit = .
+
+.stack_dummy    0x0000000010000108      0x200
+ *(.stack*)
+ .stack         0x0000000010000108      0x200 bin/startup_LPC11xx.o
+                0x0000000010002000                __StackTop = (ORIGIN (RAM) + LENGTH (RAM))
+                0x0000000010001e00                __StackLimit = (__StackTop - SIZEOF (.stack_dummy))
+                [!provide]                        PROVIDE (__stack, __StackTop)
+                0x0000000000000001                ASSERT ((__StackLimit >= __HeapLimit), region RAM overflowed with stack)
+OUTPUT(bin/blink.elf elf32-littlearm)
+
+.ARM.attributes
+                0x0000000000000000       0x2d
+ .ARM.attributes
+                0x0000000000000000       0x21 bin/startup_LPC11xx.o
+ .ARM.attributes
+                0x0000000000000021       0x31 bin/clock_11xx.o
+ .ARM.attributes
+                0x0000000000000052       0x31 bin/chip_11xx.o
+ .ARM.attributes
+                0x0000000000000083       0x31 bin/gpio_11xx_2.o
+ .ARM.attributes
+                0x00000000000000b4       0x31 bin/blink.o
+ .ARM.attributes
+                0x00000000000000e5       0x31 bin/sysinit.o
+ .ARM.attributes
+                0x0000000000000116       0x1e /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x0000000000000134       0x1e /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_dvmd_tls.o)
+
+.comment        0x0000000000000000       0xa8
+ .comment       0x0000000000000000       0x70 bin/clock_11xx.o
+                                         0x71 (size before relaxing)
+ .comment       0x0000000000000070       0x71 bin/chip_11xx.o
+ .comment       0x0000000000000070       0x71 bin/gpio_11xx_2.o
+ .comment       0x0000000000000070       0x38 bin/blink.o
+                                         0x39 (size before relaxing)
+ .comment       0x00000000000000a8       0x71 bin/sysinit.o
+
+.debug_line     0x0000000000000000     0x1271
+ .debug_line    0x0000000000000000       0x7b bin/startup_LPC11xx.o
+ .debug_line    0x000000000000007b      0x3e8 bin/clock_11xx.o
+ .debug_line    0x0000000000000463      0x2c9 bin/chip_11xx.o
+ .debug_line    0x000000000000072c      0x3f4 bin/gpio_11xx_2.o
+ .debug_line    0x0000000000000b20      0x39c bin/blink.o
+ .debug_line    0x0000000000000ebc      0x2eb bin/sysinit.o
+ .debug_line    0x00000000000011a7       0x6c /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o)
+ .debug_line    0x0000000000001213       0x5e /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_dvmd_tls.o)
+
+.debug_info     0x0000000000000000     0x2980
+ .debug_info    0x0000000000000000       0x8e bin/startup_LPC11xx.o
+ .debug_info    0x000000000000008e      0x978 bin/clock_11xx.o
+ .debug_info    0x0000000000000a06       0xe7 bin/chip_11xx.o
+ .debug_info    0x0000000000000aed      0xc60 bin/gpio_11xx_2.o
+ .debug_info    0x000000000000174d      0xb8f bin/blink.o
+ .debug_info    0x00000000000022dc      0x532 bin/sysinit.o
+ .debug_info    0x000000000000280e       0xb9 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o)
+ .debug_info    0x00000000000028c7       0xb9 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_dvmd_tls.o)
+
+.debug_abbrev   0x0000000000000000      0x92f
+ .debug_abbrev  0x0000000000000000       0x12 bin/startup_LPC11xx.o
+ .debug_abbrev  0x0000000000000012      0x295 bin/clock_11xx.o
+ .debug_abbrev  0x00000000000002a7       0x9b bin/chip_11xx.o
+ .debug_abbrev  0x0000000000000342      0x1f5 bin/gpio_11xx_2.o
+ .debug_abbrev  0x0000000000000537      0x2e2 bin/blink.o
+ .debug_abbrev  0x0000000000000819       0xee bin/sysinit.o
+ .debug_abbrev  0x0000000000000907       0x14 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o)
+ .debug_abbrev  0x000000000000091b       0x14 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_dvmd_tls.o)
+
+.debug_aranges  0x0000000000000000      0x188
+ .debug_aranges
+                0x0000000000000000       0x28 bin/startup_LPC11xx.o
+ .debug_aranges
+                0x0000000000000028       0x68 bin/clock_11xx.o
+ .debug_aranges
+                0x0000000000000090       0x20 bin/chip_11xx.o
+ .debug_aranges
+                0x00000000000000b0       0x50 bin/gpio_11xx_2.o
+ .debug_aranges
+                0x0000000000000100       0x28 bin/blink.o
+ .debug_aranges
+                0x0000000000000128       0x20 bin/sysinit.o
+ .debug_aranges
+                0x0000000000000148       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o)
+ .debug_aranges
+                0x0000000000000168       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_dvmd_tls.o)
+
+.debug_ranges   0x0000000000000000      0x3f8
+ .debug_ranges  0x0000000000000000       0x20 bin/startup_LPC11xx.o
+ .debug_ranges  0x0000000000000020       0xa0 bin/clock_11xx.o
+ .debug_ranges  0x00000000000000c0       0x10 bin/chip_11xx.o
+ .debug_ranges  0x00000000000000d0       0xe0 bin/gpio_11xx_2.o
+ .debug_ranges  0x00000000000001b0      0x238 bin/blink.o
+ .debug_ranges  0x00000000000003e8       0x10 bin/sysinit.o
+
+.debug_loc      0x0000000000000000      0x7ec
+ .debug_loc     0x0000000000000000      0x16e bin/clock_11xx.o
+ .debug_loc     0x000000000000016e      0x5a1 bin/gpio_11xx_2.o
+ .debug_loc     0x000000000000070f       0x99 bin/blink.o
+ .debug_loc     0x00000000000007a8       0x44 bin/sysinit.o
+
+.debug_macro    0x0000000000000000      0xfc8
+ .debug_macro   0x0000000000000000      0x160 bin/clock_11xx.o
+ .debug_macro   0x0000000000000160      0x160 bin/chip_11xx.o
+ .debug_macro   0x00000000000002c0      0x160 bin/gpio_11xx_2.o
+ .debug_macro   0x0000000000000420      0x178 bin/blink.o
+ .debug_macro   0x0000000000000598      0x81a bin/blink.o
+ .debug_macro   0x0000000000000db2      0x216 bin/sysinit.o
+
+.debug_str      0x0000000000000000     0x8350
+ .debug_str     0x0000000000000000     0x7803 bin/clock_11xx.o
+                                       0x79ea (size before relaxing)
+ .debug_str     0x0000000000007803       0x4f bin/chip_11xx.o
+                                       0x7244 (size before relaxing)
+ .debug_str     0x0000000000007852      0x44b bin/gpio_11xx_2.o
+                                       0x78d2 (size before relaxing)
+ .debug_str     0x0000000000007c9d      0x3d8 bin/blink.o
+                                       0x7585 (size before relaxing)
+ .debug_str     0x0000000000008075      0x2db bin/sysinit.o
+                                       0x776a (size before relaxing)
+
+.debug_frame    0x0000000000000000      0x248
+ .debug_frame   0x0000000000000000       0xd8 bin/clock_11xx.o
+ .debug_frame   0x00000000000000d8       0x2c bin/chip_11xx.o
+ .debug_frame   0x0000000000000104       0xa4 bin/gpio_11xx_2.o
+ .debug_frame   0x00000000000001a8       0x54 bin/blink.o
+ .debug_frame   0x00000000000001fc       0x2c bin/sysinit.o
+ .debug_frame   0x0000000000000228       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o)
+
+Cross Reference Table
+
+Symbol                                            File
+ADC_IRQHandler                                    bin/startup_LPC11xx.o
+BOD_IRQHandler                                    bin/startup_LPC11xx.o
+CAN_IRQHandler                                    bin/startup_LPC11xx.o
+Chip_ADC_DeInit                                   bin/adc_11xx.o
+Chip_ADC_EnableChannel                            bin/adc_11xx.o
+Chip_ADC_Init                                     bin/adc_11xx.o
+Chip_ADC_Int_SetChannelCmd                        bin/adc_11xx.o
+Chip_ADC_ReadByte                                 bin/adc_11xx.o
+Chip_ADC_ReadStatus                               bin/adc_11xx.o
+Chip_ADC_ReadValue                                bin/adc_11xx.o
+Chip_ADC_SetBurstCmd                              bin/adc_11xx.o
+Chip_ADC_SetResolution                            bin/adc_11xx.o
+Chip_ADC_SetSampleRate                            bin/adc_11xx.o
+Chip_ADC_SetStartMode                             bin/adc_11xx.o
+Chip_Clock_GetMainClockRate                       bin/clock_11xx.o
+                                                  bin/uart_11xx.o
+                                                  bin/ssp_11xx.o
+Chip_Clock_GetSystemClockRate                     bin/clock_11xx.o
+                                                  bin/adc_11xx.o
+                                                  bin/chip_11xx.o
+Chip_Clock_GetSystemPLLInClockRate                bin/clock_11xx.o
+Chip_Clock_GetSystemPLLOutClockRate               bin/clock_11xx.o
+Chip_Clock_GetWDTOSCRate                          bin/clock_11xx.o
+Chip_Clock_SetCLKOUTSource                        bin/clock_11xx.o
+Chip_Clock_SetMainClockSource                     bin/clock_11xx.o
+                                                  bin/sysinit_11xx.o
+Chip_Clock_SetPLLBypass                           bin/clock_11xx.o
+Chip_Clock_SetSystemPLLSource                     bin/clock_11xx.o
+                                                  bin/sysinit_11xx.o
+Chip_Clock_SetWDTClockSource                      bin/clock_11xx.o
+Chip_GPIO_DeInit                                  bin/gpio_11xx_2.o
+Chip_GPIO_Init                                    bin/gpio_11xx_2.o
+                                                  bin/blink.o
+Chip_GPIO_SetDir                                  bin/gpio_11xx_2.o
+Chip_GPIO_SetPinDIR                               bin/gpio_11xx_2.o
+Chip_GPIO_SetPortDIR                              bin/gpio_11xx_2.o
+Chip_GPIO_SetupPinInt                             bin/gpio_11xx_2.o
+Chip_GPIO_WriteDirBit                             bin/gpio_11xx_2.o
+                                                  bin/blink.o
+Chip_I2C_DeInit                                   bin/i2c_11xx.o
+Chip_I2C_Disable                                  bin/i2c_11xx.o
+Chip_I2C_EventHandler                             bin/i2c_11xx.o
+Chip_I2C_EventHandlerPolling                      bin/i2c_11xx.o
+Chip_I2C_GetClockRate                             bin/i2c_11xx.o
+Chip_I2C_GetMasterEventHandler                    bin/i2c_11xx.o
+Chip_I2C_Init                                     bin/i2c_11xx.o
+Chip_I2C_IsMasterActive                           bin/i2c_11xx.o
+Chip_I2C_IsStateChanged                           bin/i2c_11xx.o
+Chip_I2C_MasterCmdRead                            bin/i2c_11xx.o
+Chip_I2C_MasterRead                               bin/i2c_11xx.o
+Chip_I2C_MasterSend                               bin/i2c_11xx.o
+Chip_I2C_MasterStateHandler                       bin/i2c_11xx.o
+Chip_I2C_MasterTransfer                           bin/i2c_11xx.o
+Chip_I2C_SetClockRate                             bin/i2c_11xx.o
+Chip_I2C_SetMasterEventHandler                    bin/i2c_11xx.o
+Chip_I2C_SlaveSetup                               bin/i2c_11xx.o
+Chip_I2C_SlaveStateHandler                        bin/i2c_11xx.o
+Chip_PMU_DeepPowerDownState                       bin/pmu_11xx.o
+Chip_PMU_Sleep                                    bin/pmu_11xx.o
+Chip_PMU_SleepState                               bin/pmu_11xx.o
+Chip_SSP_DeInit                                   bin/ssp_11xx.o
+Chip_SSP_Init                                     bin/ssp_11xx.o
+Chip_SSP_Int_FlushData                            bin/ssp_11xx.o
+Chip_SSP_Int_RWFrames16Bits                       bin/ssp_11xx.o
+Chip_SSP_Int_RWFrames8Bits                        bin/ssp_11xx.o
+Chip_SSP_RWFrames_Blocking                        bin/ssp_11xx.o
+Chip_SSP_ReadFrames_Blocking                      bin/ssp_11xx.o
+Chip_SSP_SetBitRate                               bin/ssp_11xx.o
+Chip_SSP_SetClockRate                             bin/ssp_11xx.o
+Chip_SSP_SetMaster                                bin/ssp_11xx.o
+Chip_SSP_WriteFrames_Blocking                     bin/ssp_11xx.o
+Chip_SYSCTL_PowerDown                             bin/sysctl_11xx.o
+                                                  bin/adc_11xx.o
+                                                  bin/sysinit_11xx.o
+Chip_SYSCTL_PowerUp                               bin/sysctl_11xx.o
+                                                  bin/adc_11xx.o
+                                                  bin/sysinit_11xx.o
+Chip_SYSCTL_SetDeepSleepPD                        bin/sysctl_11xx.o
+Chip_SYSCTL_SetWakeup                             bin/sysctl_11xx.o
+Chip_SystemInit                                   bin/sysinit_11xx.o
+Chip_TIMER_DeInit                                 bin/timer_11xx.o
+Chip_TIMER_ExtMatchControlSet                     bin/timer_11xx.o
+Chip_TIMER_Init                                   bin/timer_11xx.o
+Chip_TIMER_Reset                                  bin/timer_11xx.o
+Chip_UART_DeInit                                  bin/uart_11xx.o
+Chip_UART_IRQRBHandler                            bin/uart_11xx.o
+Chip_UART_Init                                    bin/uart_11xx.o
+Chip_UART_RXIntHandlerRB                          bin/uart_11xx.o
+Chip_UART_Read                                    bin/uart_11xx.o
+Chip_UART_ReadBlocking                            bin/uart_11xx.o
+Chip_UART_ReadRB                                  bin/uart_11xx.o
+Chip_UART_Send                                    bin/uart_11xx.o
+Chip_UART_SendBlocking                            bin/uart_11xx.o
+Chip_UART_SendRB                                  bin/uart_11xx.o
+Chip_UART_SetBaud                                 bin/uart_11xx.o
+Chip_UART_SetBaudFDR                              bin/uart_11xx.o
+Chip_UART_TXIntHandlerRB                          bin/uart_11xx.o
+Chip_WWDT_ClearStatusFlag                         bin/wwdt_11xx.o
+Chip_WWDT_DeInit                                  bin/wwdt_11xx.o
+Chip_WWDT_Init                                    bin/wwdt_11xx.o
+Default_Handler                                   bin/startup_LPC11xx.o
+HardFault_Handler                                 bin/startup_LPC11xx.o
+I2C_IRQHandler                                    bin/startup_LPC11xx.o
+NMI_Handler                                       bin/startup_LPC11xx.o
+OscRateIn                                         bin/blink.o
+                                                  bin/clock_11xx.o
+PIOINT0_IRQHandler                                bin/startup_LPC11xx.o
+PIOINT1_IRQHandler                                bin/startup_LPC11xx.o
+PIOINT2_IRQHandler                                bin/startup_LPC11xx.o
+PIOINT3_IRQHandler                                bin/startup_LPC11xx.o
+PendSV_Handler                                    bin/startup_LPC11xx.o
+Reset_Handler                                     bin/startup_LPC11xx.o
+RingBuffer_Init                                   bin/ring_buffer.o
+RingBuffer_Insert                                 bin/ring_buffer.o
+                                                  bin/uart_11xx.o
+RingBuffer_InsertMult                             bin/ring_buffer.o
+                                                  bin/uart_11xx.o
+RingBuffer_Pop                                    bin/ring_buffer.o
+                                                  bin/uart_11xx.o
+RingBuffer_PopMult                                bin/ring_buffer.o
+                                                  bin/uart_11xx.o
+SSP0_IRQHandler                                   bin/startup_LPC11xx.o
+SSP1_IRQHandler                                   bin/startup_LPC11xx.o
+SVC_Handler                                       bin/startup_LPC11xx.o
+SysTick_Handler                                   bin/blink.o
+                                                  bin/startup_LPC11xx.o
+SystemCoreClock                                   bin/sysinit.o
+                                                  bin/chip_11xx.o
+                                                  bin/blink.o
+                                                  bin/i2c_11xx.o
+SystemCoreClockUpdate                             bin/chip_11xx.o
+                                                  bin/blink.o
+SystemInit                                        bin/sysinit.o
+                                                  bin/startup_LPC11xx.o
+TIMER16_0_IRQHandler                              bin/startup_LPC11xx.o
+TIMER16_1_IRQHandler                              bin/startup_LPC11xx.o
+TIMER32_0_IRQHandler                              bin/startup_LPC11xx.o
+TIMER32_1_IRQHandler                              bin/startup_LPC11xx.o
+UART_IRQHandler                                   bin/startup_LPC11xx.o
+WAKEUP_IRQHandler                                 bin/startup_LPC11xx.o
+WDT_IRQHandler                                    bin/startup_LPC11xx.o
+__HeapBase                                        bin/startup_LPC11xx.o
+__HeapLimit                                       bin/startup_LPC11xx.o
+__StackLimit                                      bin/startup_LPC11xx.o
+__StackTop                                        bin/startup_LPC11xx.o
+__aeabi_idiv0                                     /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_dvmd_tls.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o)
+__aeabi_ldiv0                                     /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_dvmd_tls.o)
+__aeabi_uidiv                                     /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o)
+                                                  bin/blink.o
+                                                  bin/uart_11xx.o
+                                                  bin/adc_11xx.o
+                                                  bin/clock_11xx.o
+                                                  bin/i2c_11xx.o
+                                                  bin/ssp_11xx.o
+__aeabi_uidivmod                                  /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o)
+                                                  bin/uart_11xx.o
+__isr_vector                                      bin/startup_LPC11xx.o
+__udivsi3                                         /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o)
+getSlaveIndex                                     bin/i2c_11xx.o
+handleMasterXferState                             bin/i2c_11xx.o
+handleSlaveXferState                              bin/i2c_11xx.o
+main                                              bin/blink.o
+                                                  bin/startup_LPC11xx.o
+memcpy                                            /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memcpy.o)
+                                                  bin/ring_buffer.o
+msTicks                                           bin/blink.o
+readAdcVal                                        bin/adc_11xx.o
+setStartMode                                      bin/adc_11xx.o
