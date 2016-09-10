@@ -10,6 +10,7 @@ Here's a list of commands to get you up and running, along with some challenges 
 `cd [directory]` - change current directory
 `ls [folder]` - list files
 `mkdir [directory name]` - make directory
+`grep -rn [search term] [folder to search]` - search a set of files for a search term
 
 
 ## Git Cheatsheet:
@@ -41,7 +42,8 @@ Make a branch:
     - Blink a LED on and off with frequency 1ms
     - Blink a the series of LEDs on and off with frequency 1ms
 2. UART Echo Exercise - Echo terminal input
-    - 
+    - Echo terminal input with whaterver you type into `make com`
+    - Toggle LED whenever you type 'q'
 3. CAN Exercise - Make two MCUs talk to each other
 
 # LPC11C14 MCU Data Sheet
