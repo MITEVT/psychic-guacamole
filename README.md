@@ -37,7 +37,11 @@ Make a branch:
 
 ## TODO:
 1. Blink Exercise - Debug LEDs are super important!
+    - Turn a LED on
+    - Blink a LED on and off with frequency 1ms
+    - Blink a the series of LEDs on and off with frequency 1ms
 2. UART Echo Exercise - Echo terminal input
+    - 
 3. CAN Exercise - Make two MCUs talk to each other
 
 # LPC11C14 MCU Data Sheet

@@ -32,33 +32,17 @@ int main(void)
 	Chip_UART_SetupFIFOS(LPC_USART, (UART_FCR_FIFO_EN | UART_FCR_TRG_LEV2));
 	Chip_UART_TXEnable(LPC_USART);
 
-	const uint8_t *string = "Hello World\n\r";
-
 	if (SysTick_Config (SystemCoreClock / 1000)) {
 		//Error
 		while(1);
 	}
 
 	Chip_GPIO_Init(LPC_GPIO);
-    	Chip_GPIO_WriteDirBit(LPC_GPIO, LED0, true);
+    Chip_GPIO_WriteDirBit(LPC_GPIO, LED0, true);
     
-	uint8_t toggle = 0;
-
 	while(1) {
 		uint8_t count;
 		if ((count = Chip_UART_Read(LPC_USART, Rx_Buf, 8)) != 0) {
-			Chip_UART_SendBlocking(LPC_USART, Rx_Buf, count);
-			if (Rx_Buf[0] == 'q') {
-                		if (toggle == 0) {
-                    			Chip_GPIO_SetPinState(LPC_GPIO, LED0, false);
-                   			 toggle = 1;
-               			 } else {
-                   			 Chip_GPIO_SetPinState(LPC_GPIO, LED0, true);
-                   			 toggle = 0;
-               			 }
-                
-           		 }
-        
 		}
 	}
 
