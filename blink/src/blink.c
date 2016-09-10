@@ -1,7 +1,7 @@
 
 #include "chip.h"
 
-const uint32_t OscRateIn = 12000000;
+const uint32_t OscRateIn = 0;
 
 #define LED0 2, 8
 #define LED1 0, 6
@@ -15,8 +15,8 @@ void SysTick_Handler(void) {
 }
 
 static void Delay(uint32_t dlyTicks) {
-	uint32_t curTicks = msTicks;
-	while ((msTicks - curTicks) < dlyTicks);
+    // TODO
+    // Some sort of delay function!!
 }
 
 static void GPIO_Config(void) {
@@ -50,25 +50,11 @@ int main (void) {
 	LED_Init(LED3);
 
 	GPIO_Config();
+    uint32_t delay = 500;
 
-	uint8_t i = 1;
-	uint16_t delay = 500;
 
 	while(1) {
-		i = 1 - i;
-		delay = (i) ? 500 : 250;
-
-		LED_Write(LED3, false);
-		LED_Write(LED0, true);
-		Delay(delay);
-		LED_Write(LED0, false);
-		LED_Write(LED1, true);
-		Delay(delay);
-		LED_Write(LED1, false);
-		LED_Write(LED2, true);
-		Delay(delay);
-		LED_Write(LED2, false);
-		LED_Write(LED3, true);
-		Delay(delay);
+		// LED_Write(LED3, true);
+		// Delay(delay);
 	}
 }
