@@ -26,7 +26,7 @@ RM = rm -f
 #=============================================================================#
 
 # project name
-PROJECT = blink
+PROJECT = uart
 
 # core type
 CORE = cortex-m0
@@ -301,8 +301,7 @@ writeflash: all
 
 com:
 	@echo "Opening" $(COMPORT)
-	# @picocom -b 9600 $(COMPORT)
-	@lpc21isp -NXPARM -control -termonly $(HEX) $(COMPORT) $(BAUDRATE) $(CLOCK_OSC)
+	lpc21isp -NXPARM -control -termonly $(HEX) $(COMPORT) $(BAUDRATE) $(CLOCK_OSC)
 
 #=============================================================================#
 # make clean

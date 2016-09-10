@@ -44,8 +44,6 @@ int main (void) {
 		while(1);
 	}
 
-	
-
 	LED_Init(LED0);
 	LED_Init(LED1);
 	LED_Init(LED2);
