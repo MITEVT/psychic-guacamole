@@ -25,7 +25,7 @@ CCAN_MSG_OBJ_T msg_obj;
 STATIC RINGBUFF_T rx_buffer;
 CCAN_MSG_OBJ_T _rx_buffer[8];
 static bool can_error_flag;
-static bool can_error_info;
+static uint32_t can_error_info;
 
 static char str[100];
 static char uart_rx_buf[UART_RX_BUFFER_SIZE];
@@ -151,6 +151,8 @@ int main(void)
 	LED_Init(LED0);
 	LED_Init(LED1);
 
+	LED_Write(LED0, true);
+
 	//---------------
 	//Ring Buffer
 
@@ -189,7 +191,7 @@ int main(void)
 
 	/* Configure message object 1 to only ID 0x600 */
 	msg_obj.msgobj = 1;
-	msg_obj.mode_id = 0x600;
+	msg_obj.mode_id = 0x601;
 	msg_obj.mask = 0x7FF;
 	LPC_CCAN_API->config_rxmsgobj(&msg_obj);
 
