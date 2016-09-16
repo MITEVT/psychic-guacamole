@@ -47,17 +47,6 @@ int main(void)
 	while(1) {
 		uint8_t count;
 		if ((count = Chip_UART_Read(LPC_USART, Rx_Buf, 8)) != 0) {
-			Chip_UART_SendBlocking(LPC_USART, Rx_Buf, count);
-			if (Rx_Buf[0] == 'q') {
-                		if (toggle == 0) {
-                    			Chip_GPIO_SetPinState(LPC_GPIO, LED0, false);
-                   			 toggle = 1;
-               			 } else {
-                   			 Chip_GPIO_SetPinState(LPC_GPIO, LED0, true);
-                   			 toggle = 0;
-               			 }
-                
-           		 }
         
 		}
 	}
