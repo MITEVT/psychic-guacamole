@@ -101,9 +101,6 @@ void CAN_rx(uint8_t msg_obj_num) {
 /*	Function is executed by the Callback handler after
     a CAN message has been transmitted */
 void CAN_tx(uint8_t msg_obj_num) {
-	LED_Write(LED0, true);
-	LED_Write(LED1, true);
-	msg_obj_num = msg_obj_num;
 }
 
 /*	CAN error callback */
@@ -191,7 +188,7 @@ int main(void)
 
 	/* Configure message object 1 to only ID 0x600 */
 	msg_obj.msgobj = 1;
-	msg_obj.mode_id = 0x601;
+	msg_obj.mode_id = 0x600;
 	msg_obj.mask = 0x7FF;
 	LPC_CCAN_API->config_rxmsgobj(&msg_obj);
 
@@ -223,6 +220,7 @@ int main(void)
 				case 'a':
 					DEBUG_Print("Sending CAN with ID: 0x600\r\n");
 					msg_obj.msgobj = 2;
+					msg_obj.mode_id = 0x600;
 					msg_obj.dlc = 1;
 					msg_obj.data[0] = 0xAA;
 					LPC_CCAN_API->can_transmit(&msg_obj);
