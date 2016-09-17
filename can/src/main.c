@@ -93,6 +93,7 @@ void CAN_rx(uint8_t msg_obj_num) {
 	/* Now load up the msg_obj structure with the CAN message */
 	LPC_CCAN_API->can_receive(&msg_obj);
 	if (msg_obj_num == 1) {
+                // TODO: Insert message object into ring buffer rx_buffer
 		RingBuffer_Insert(&rx_buffer, &msg_obj);
 	}
 }
@@ -216,6 +217,10 @@ int main(void)
 
 		uint8_t count;
 		if ((count = Chip_UART_Read(LPC_USART, uart_rx_buf, UART_RX_BUFFER_SIZE)) != 0) {
+                        // when character 'a' is recieved, send a can message object with the following specs:
+                        //      - msgobj memory slot 2
+                        //      - CAN ID 0x700
+                        //      - one byte of data, 0xAA or whatever you choose
 			switch (uart_rx_buf[0]) {
 				case 'a':
 					DEBUG_Print("Sending CAN with ID: 0x600\r\n");
