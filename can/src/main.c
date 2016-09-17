@@ -94,7 +94,6 @@ void CAN_rx(uint8_t msg_obj_num) {
 	LPC_CCAN_API->can_receive(&msg_obj);
 	if (msg_obj_num == 1) {
                 // TODO: Insert message object into ring buffer rx_buffer
-		RingBuffer_Insert(&rx_buffer, &msg_obj);
 	}
 }
 
@@ -188,6 +187,7 @@ int main(void)
 	// } CCAN_MSG_OBJ_T;
 
 	/* Configure message object 1 to only ID 0x600 */
+	// THIS IS MSG OBJ ID FOR READING MESSAGES 
 	msg_obj.msgobj = 1;
 	msg_obj.mode_id = 0x600;
 	msg_obj.mask = 0x7FF;
@@ -200,9 +200,9 @@ int main(void)
 	while (1) {
 		if (!RingBuffer_IsEmpty(&rx_buffer)) {
 			CCAN_MSG_OBJ_T temp_msg;
-			RingBuffer_Pop(&rx_buffer, &temp_msg);
+			// TODO Pop from ring buffer into CCAN_MSG_OBJ
 			DEBUG_Print("Received Message ID: 0x");
-			itoa(temp_msg.mode_id, str, 16);
+			itoa(9999999, str, 16); // replace with message ID of temp_msg
 			DEBUG_Print(str);
 			DEBUG_Print("\r\n");
 		}	
@@ -221,19 +221,15 @@ int main(void)
                         //      - msgobj memory slot 2
                         //      - CAN ID 0x700
                         //      - one byte of data, 0xAA or whatever you choose
-			switch (uart_rx_buf[0]) {
-				case 'a':
-					DEBUG_Print("Sending CAN with ID: 0x600\r\n");
-					msg_obj.msgobj = 2;
-					msg_obj.mode_id = 0x600;
-					msg_obj.dlc = 1;
-					msg_obj.data[0] = 0xAA;
-					LPC_CCAN_API->can_transmit(&msg_obj);
-					break;
-				default:
-					DEBUG_Print("Invalid Command\r\n");
-					break;
-			}
+                        //
+                        // Some thoughts and code to help you get along:
+			// switch (uart_rx_buf[0]) {
+			// ....
+			// ....
+			// LPC_CCAN_API->can_transmit(&msg_obj);
+			// break;
+			// ...
+			// }
 		}
 	}
 }
