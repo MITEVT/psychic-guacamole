@@ -9,11 +9,16 @@ The [FAQ](https://github.com/MITEVT/opel_EE/wiki/Large-General-FAQ-about-LPC11CX
 ## Unix Cheatsheet:
 
 `.` - current directory
+
 `..` - reference to directory one level up
 
 `cd [directory]` - change current directory
+
 `ls [folder]` - list files
+
 `mkdir [directory name]` - make directory
+
+`grep "search term" [directory to search] -rn` - search for a specific term in all the files in a directory (recursively)
 
 
 ## Git Cheatsheet:
